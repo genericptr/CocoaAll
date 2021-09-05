@@ -54,7 +54,10 @@ all:
 	${FPC} CoreData.pas ${OPTS}
 	${FPC} CoreMedia.pas ${OPTS}
 	${FPC} CoreVideo.pas ${OPTS}
-
+	${FPC} CoreImage.pas ${OPTS}
+	${FPC} AppKit.pas ${OPTS}
+	${FPC} Foundation.pas ${OPTS}
+	
 	# Merged from macOS 10.10 SDK
 
 	${FPC} Accounts.pas ${OPTS}
