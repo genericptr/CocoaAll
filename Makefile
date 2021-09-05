@@ -4,8 +4,10 @@ OPTS=-vbr -dMACOSALL -FU${OUTPUT}
 
 all:
 	mkdir -p ${OUTPUT}
-	
+
 	${FPC} CocoaAll.pas -dCOCOAALL ${OPTS}
+
+	# macOS 11.3 SDK
 
 	${FPC} AddressBook.pas ${OPTS}
 	${FPC} UserNotifications.pas ${OPTS}
@@ -52,3 +54,41 @@ all:
 	${FPC} CoreData.pas ${OPTS}
 	${FPC} CoreMedia.pas ${OPTS}
 	${FPC} CoreVideo.pas ${OPTS}
+
+	# Merged from macOS 10.10 SDK
+
+	${FPC} Accounts.pas ${OPTS}
+	${FPC} FinderSync.pas ${OPTS}
+	${FPC} MediaLibrary.pas ${OPTS}
+	${FPC} QTKit.pas ${OPTS}
+	${FPC} IOBluetooth.pas ${OPTS}
+	${FPC} SecurityFoundation.pas ${OPTS}
+	${FPC} IOBluetoothUI.pas ${OPTS}
+	${FPC} PreferencePanes.pas ${OPTS}
+	${FPC} ScreenSaver.pas ${OPTS}
+	${FPC} ScriptingBridge.pas ${OPTS}
+	${FPC} QuartzFilters.pas ${OPTS}
+	${FPC} SecurityInterface.pas ${OPTS}
+	${FPC} Collaboration.pas ${OPTS}
+	${FPC} CoreMediaIO.pas ${OPTS}
+	${FPC} GLKit.pas ${OPTS}
+	${FPC} CFOpenDirectory.pas ${OPTS}
+	${FPC} Social.pas ${OPTS}
+	${FPC} MultipeerConnectivity.pas ${OPTS}
+	${FPC} AudioVideoBridging.pas ${OPTS}
+	${FPC} QuartzComposer.pas ${OPTS}
+	${FPC} PubSub.pas ${OPTS}
+	${FPC} LocalAuthentication.pas ${OPTS}
+	${FPC} InstantMessage.pas ${OPTS}
+	${FPC} NotificationCenter.pas ${OPTS}
+	${FPC} MediaAccessibility.pas ${OPTS}
+	${FPC} iTunesLibrary.pas ${OPTS}
+	${FPC} OSAKit.pas ${OPTS}
+	${FPC} SyncServices.pas ${OPTS}
+	${FPC} OpenDirectory.pas ${OPTS}
+	${FPC} InstallerPlugins.pas ${OPTS}
+	${FPC} AVKit.pas ${OPTS}
+	${FPC} ServiceManagement.pas ${OPTS}
+	${FPC} GameController.pas ${OPTS}
+	${FPC} InputMethodKit.pas ${OPTS}
+	${FPC} CryptoTokenKit.pas ${OPTS}
