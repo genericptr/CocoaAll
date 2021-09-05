@@ -24,7 +24,7 @@ type
   optional
     procedure widgetPerformUpdateWithCompletionHandler (completionHandler: OpaqueCBlock); message 'widgetPerformUpdateWithCompletionHandler:';
     function widgetMarginInsetsForProposedMarginInsets (defaultMarginInset: NSEdgeInsets): NSEdgeInsets; message 'widgetMarginInsetsForProposedMarginInsets:';
-    function widgetAllowsEditing: ObjCBOOL; message 'widgetAllowsEditing';
+    function widgetAllowsEditing: objcbool; message 'widgetAllowsEditing';
     procedure widgetDidBeginEditing; message 'widgetDidBeginEditing';
     procedure widgetDidEndEditing; message 'widgetDidEndEditing';
   end;

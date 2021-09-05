@@ -78,16 +78,16 @@ type
     function language: OSALanguage; message 'language';
     procedure setLanguageInstance(newValue: OSALanguageInstance); message 'setLanguageInstance:';
     function languageInstance: OSALanguageInstance; message 'languageInstance';
-    function isCompiled: ObjCBOOL; message 'isCompiled';
-    function compileAndReturnError (errorInfo: NSDictionaryPtr): ObjCBOOL; message 'compileAndReturnError:';
+    function isCompiled: objcbool; message 'isCompiled';
+    function compileAndReturnError (errorInfo: NSDictionaryPtr): objcbool; message 'compileAndReturnError:';
     function executeAndReturnError (errorInfo: NSDictionaryPtr): NSAppleEventDescriptor; message 'executeAndReturnError:';
     function executeAppleEvent_error (event: NSAppleEventDescriptor; errorInfo: NSDictionaryPtr): NSAppleEventDescriptor; message 'executeAppleEvent:error:';
     function executeAndReturnDisplayValue_error (displayValue: NSAttributedStringPtr; errorInfo: NSDictionaryPtr): NSAppleEventDescriptor; message 'executeAndReturnDisplayValue:error:';
     function executeHandlerWithName_arguments_error (name: NSString; arguments: NSArray; errorInfo: NSDictionaryPtr): NSAppleEventDescriptor; message 'executeHandlerWithName:arguments:error:';
     function richTextSource: NSAttributedString; message 'richTextSource';
     function richTextFromDescriptor (descriptor: NSAppleEventDescriptor): NSAttributedString; message 'richTextFromDescriptor:';
-    function writeToURL_ofType_error (url_: NSURL; type_: NSString; errorInfo: NSDictionaryPtr): ObjCBOOL; message 'writeToURL:ofType:error:';
-    function writeToURL_ofType_usingStorageOptions_error (url_: NSURL; type_: NSString; storageOptions: OSAStorageOptions; errorInfo: NSDictionaryPtr): ObjCBOOL; message 'writeToURL:ofType:usingStorageOptions:error:';
+    function writeToURL_ofType_error (url_: NSURL; type_: NSString; errorInfo: NSDictionaryPtr): objcbool; message 'writeToURL:ofType:error:';
+    function writeToURL_ofType_usingStorageOptions_error (url_: NSURL; type_: NSString; storageOptions: OSAStorageOptions; errorInfo: NSDictionaryPtr): objcbool; message 'writeToURL:ofType:usingStorageOptions:error:';
     function compiledDataForType_usingStorageOptions_error (type_: NSString; storageOptions: OSAStorageOptions; errorInfo: NSDictionaryPtr): NSData; message 'compiledDataForType:usingStorageOptions:error:';
 
     { Adopted protocols }

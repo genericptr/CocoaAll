@@ -54,12 +54,12 @@ type
   TKSmartCard = objcclass external (NSObject)
   public
     function slot: TKSmartCardSlot; message 'slot';
-    function valid: ObjCBOOL; message 'valid';
+    function valid: objcbool; message 'valid';
     procedure setAllowedProtocols(newValue: TKSmartCardProtocol); message 'setAllowedProtocols:';
     function allowedProtocols: TKSmartCardProtocol; message 'allowedProtocols';
     function currentProtocol: TKSmartCardProtocol; message 'currentProtocol';
-    procedure setSensitive(newValue: ObjCBOOL); message 'setSensitive:';
-    function sensitive: ObjCBOOL; message 'sensitive';
+    procedure setSensitive(newValue: objcbool); message 'setSensitive:';
+    function sensitive: objcbool; message 'sensitive';
     procedure setContext(newValue: id); message 'setContext:';
     function context: id; message 'context';
     procedure beginSessionWithReply (reply: OpaqueCBlock); message 'beginSessionWithReply:';
@@ -72,8 +72,8 @@ type
   APDULevelTransmit = objccategory external (TKSmartCard)
     procedure setCla(newValue: UInt8); message 'setCla:';
     function cla: UInt8; message 'cla';
-    procedure setUseExtendedLength(newValue: ObjCBOOL); message 'setUseExtendedLength:';
-    function useExtendedLength: ObjCBOOL; message 'useExtendedLength';
+    procedure setUseExtendedLength(newValue: objcbool); message 'setUseExtendedLength:';
+    function useExtendedLength: objcbool; message 'useExtendedLength';
     procedure sendIns_p1_p2_data_le_reply (ins: UInt8; p1: UInt8; p2: UInt8; requestData: NSData; le: NSNumber; reply: OpaqueCBlock); message 'sendIns:p1:p2:data:le:reply:';
   end;
 {$endif}

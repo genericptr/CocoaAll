@@ -23,8 +23,8 @@ type
     procedure setAction (aSelector: SEL); message 'setAction:'; deprecated 'in 10_5, 10_9';
     function tag: NSInteger; message 'tag'; deprecated 'in 10_5, 10_9';
     procedure setTag (anInt: NSInteger); message 'setTag:'; deprecated 'in 10_5, 10_9';
-    function isEnabled: ObjCBOOL; message 'isEnabled'; deprecated 'in 10_5, 10_9';
-    procedure setEnabled (flag: ObjCBOOL); message 'setEnabled:'; deprecated 'in 10_5, 10_9';
+    function isEnabled: objcbool; message 'isEnabled'; deprecated 'in 10_5, 10_9';
+    procedure setEnabled (flag: objcbool); message 'setEnabled:'; deprecated 'in 10_5, 10_9';
     function integerValue: NSInteger; message 'integerValue'; deprecated 'in 10_5, 10_9';
     procedure setIntegerValue (anInteger: NSInteger); message 'setIntegerValue:'; deprecated 'in 10_5, 10_9';
     function intValue: cint; message 'intValue'; deprecated 'in 10_5, 10_9';

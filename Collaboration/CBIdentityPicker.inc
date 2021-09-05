@@ -15,8 +15,8 @@ type
   public
     procedure setTitle (title: NSString); message 'setTitle:';
     function title: NSString; message 'title';
-    procedure setAllowsMultipleSelection (flag: ObjCBOOL); message 'setAllowsMultipleSelection:';
-    function allowsMultipleSelection: ObjCBOOL; message 'allowsMultipleSelection';
+    procedure setAllowsMultipleSelection (flag: objcbool); message 'setAllowsMultipleSelection:';
+    function allowsMultipleSelection: objcbool; message 'allowsMultipleSelection';
     function runModal: NSInteger; message 'runModal';
     procedure runModalForWindow_modalDelegate_didEndSelector_contextInfo (window: NSWindow; delegate: id; didEndSelector: SEL; contextInfo: pointer); message 'runModalForWindow:modalDelegate:didEndSelector:contextInfo:';
     function identities: NSArray; message 'identities';

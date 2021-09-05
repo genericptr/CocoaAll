@@ -33,19 +33,19 @@ type
     defaultMappings: ODMappings;
     templateName: NSString;
     virtualSubnodes: NSArray;
-    hideRegistration: ObjCBOOL;
+    hideRegistration: objcbool;
     preferredDestinationHostName: NSString;
     preferredDestinationHostPort: cuint16;
     trustAccount: NSString;
     trustType: NSString;
     trustKerberosPrincipal: NSString;
     trustMetaAccount: NSString;
-    trustUsesMutualAuthentication: ObjCBOOL;
-    trustUsesKerberosKeytab: ObjCBOOL;
-    trustUsesSystemKeychain: ObjCBOOL;
+    trustUsesMutualAuthentication: objcbool;
+    trustUsesKerberosKeytab: objcbool;
+    trustUsesSystemKeychain: objcbool;
     packetSigning: NSInteger;
     packetEncryption: NSInteger;
-    manInTheMiddleProtection: ObjCBOOL;
+    manInTheMiddleProtection: objcbool;
     queryTimeoutInSeconds: NSInteger;
     connectionSetupTimeoutInSeconds: NSInteger;
     connectionIdleTimeoutInSeconds: NSInteger;
@@ -60,8 +60,8 @@ type
     function templateName_: NSString; message 'templateName';
     procedure setVirtualSubnodes(newValue: NSArray); message 'setVirtualSubnodes:';
     function virtualSubnodes_: NSArray; message 'virtualSubnodes';
-    procedure setHideRegistration(newValue: ObjCBOOL); message 'setHideRegistration:';
-    function hideRegistration_: ObjCBOOL; message 'hideRegistration';
+    procedure setHideRegistration(newValue: objcbool); message 'setHideRegistration:';
+    function hideRegistration_: objcbool; message 'hideRegistration';
     procedure setPreferredDestinationHostName(newValue: NSString); message 'setPreferredDestinationHostName:';
     function preferredDestinationHostName_: NSString; message 'preferredDestinationHostName';
     procedure setPreferredDestinationHostPort(newValue: cuint16); message 'setPreferredDestinationHostPort:';
@@ -70,15 +70,15 @@ type
     function trustMetaAccount_: NSString; message 'trustMetaAccount';
     function trustKerberosPrincipal_: NSString; message 'trustKerberosPrincipal';
     function trustType_: NSString; message 'trustType';
-    function trustUsesMutualAuthentication_: ObjCBOOL; message 'trustUsesMutualAuthentication';
-    function trustUsesKerberosKeytab_: ObjCBOOL; message 'trustUsesKerberosKeytab';
-    function trustUsesSystemKeychain_: ObjCBOOL; message 'trustUsesSystemKeychain';
+    function trustUsesMutualAuthentication_: objcbool; message 'trustUsesMutualAuthentication';
+    function trustUsesKerberosKeytab_: objcbool; message 'trustUsesKerberosKeytab';
+    function trustUsesSystemKeychain_: objcbool; message 'trustUsesSystemKeychain';
     procedure setPacketSigning(newValue: NSInteger); message 'setPacketSigning:';
     function packetSigning_: NSInteger; message 'packetSigning';
     procedure setPacketEncryption(newValue: NSInteger); message 'setPacketEncryption:';
     function packetEncryption_: NSInteger; message 'packetEncryption';
-    procedure setManInTheMiddleProtection(newValue: ObjCBOOL); message 'setManInTheMiddleProtection:';
-    function manInTheMiddleProtection_: ObjCBOOL; message 'manInTheMiddleProtection';
+    procedure setManInTheMiddleProtection(newValue: objcbool); message 'setManInTheMiddleProtection:';
+    function manInTheMiddleProtection_: objcbool; message 'manInTheMiddleProtection';
     procedure setQueryTimeoutInSeconds(newValue: NSInteger); message 'setQueryTimeoutInSeconds:';
     function queryTimeoutInSeconds_: NSInteger; message 'queryTimeoutInSeconds';
     procedure setConnectionSetupTimeoutInSeconds(newValue: NSInteger); message 'setConnectionSetupTimeoutInSeconds:';
@@ -96,9 +96,9 @@ type
     class function configuration: instancetype; message 'configuration';
     class function suggestedTrustAccount (hostname: NSString): NSString; message 'suggestedTrustAccount:'; { available in 10_9 }
     class function suggestedTrustPassword (length: size_t): NSString; message 'suggestedTrustPassword:'; { available in 10_9 }
-    function saveUsingAuthorization_error (authorization: SFAuthorization; error: NSErrorPtr): ObjCBOOL; message 'saveUsingAuthorization:error:'; { available in 10_9 }
-    function addTrustType_trustAccount_trustPassword_username_password_joinExisting_error (trustType__: NSString; account: NSString; accountPassword: NSString; username: NSString; password: NSString; join: ObjCBOOL; error: NSErrorPtr): ObjCBOOL; message 'addTrustType:trustAccount:trustPassword:username:password:joinExisting:error:'; { available in 10_9 }
-    function removeTrustUsingUsername_password_deleteTrustAccount_error (username: NSString; password: NSString; deleteAccount: ObjCBOOL; error: NSErrorPtr): ObjCBOOL; message 'removeTrustUsingUsername:password:deleteTrustAccount:error:'; { available in 10_9 }
+    function saveUsingAuthorization_error (authorization: SFAuthorization; error: NSErrorPtr): objcbool; message 'saveUsingAuthorization:error:'; { available in 10_9 }
+    function addTrustType_trustAccount_trustPassword_username_password_joinExisting_error (trustType__: NSString; account: NSString; accountPassword: NSString; username: NSString; password: NSString; join: objcbool; error: NSErrorPtr): objcbool; message 'addTrustType:trustAccount:trustPassword:username:password:joinExisting:error:'; { available in 10_9 }
+    function removeTrustUsingUsername_password_deleteTrustAccount_error (username: NSString; password: NSString; deleteAccount: objcbool; error: NSErrorPtr): objcbool; message 'removeTrustUsingUsername:password:deleteTrustAccount:error:'; { available in 10_9 }
   end;
 {$endif}
 

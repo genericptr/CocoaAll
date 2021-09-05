@@ -17,7 +17,7 @@ type
     _season: NSUInteger;
     _episode: NSString;
     _episodeOrder: NSInteger;
-    _hd: ObjCBOOL;
+    _hd: objcbool;
     _videoWidth: NSUInteger;
     _videoHeight: NSUInteger;
   public
@@ -26,7 +26,7 @@ type
     function season: NSUInteger; message 'season';
     function episode: NSString; message 'episode';
     function episodeOrder: NSInteger; message 'episodeOrder';
-    function isHD: ObjCBOOL; message 'isHD';
+    function isHD: objcbool; message 'isHD';
     function videoWidth: NSUInteger; message 'videoWidth';
     function videoHeight: NSUInteger; message 'videoHeight';
   end;

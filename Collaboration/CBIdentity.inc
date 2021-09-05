@@ -27,8 +27,8 @@ type
     function emailAddress: NSString; message 'emailAddress';
     function image: NSImage; message 'image';
     function persistentReference: NSData; message 'persistentReference';
-    function isHidden: ObjCBOOL; message 'isHidden';
-    function isMemberOfGroup (group: CBGroupIdentity): ObjCBOOL; message 'isMemberOfGroup:';
+    function isHidden: objcbool; message 'isHidden';
+    function isMemberOfGroup (group: CBGroupIdentity): objcbool; message 'isMemberOfGroup:';
     function CSIdentity: CSIdentityRef; message 'CSIdentity';
 
     { Adopted protocols }
@@ -43,8 +43,8 @@ type
     class function userIdentityWithPosixUID_authority (uid: uid_t; authority_: CBIdentityAuthority): CBUserIdentity; message 'userIdentityWithPosixUID:authority:';
     function posixUID: uid_t; message 'posixUID';
     function certificate: SecCertificateRef; message 'certificate';
-    function isEnabled: ObjCBOOL; message 'isEnabled';
-    function authenticateWithPassword (password: NSString): ObjCBOOL; message 'authenticateWithPassword:';
+    function isEnabled: objcbool; message 'isEnabled';
+    function authenticateWithPassword (password: NSString): objcbool; message 'authenticateWithPassword:';
   end;
 
 type

@@ -28,8 +28,8 @@ type
   private
     _movie: QTMovie;
     _fillColor: NSColor;
-    _controllerVisible: ObjCBOOL;
-    _preservesAspectRatio: ObjCBOOL;
+    _controllerVisible: objcbool;
+    _preservesAspectRatio: objcbool;
     {$if  not defined(__LP64__)}
     _rendererView: NSView;
     _movieControllerView: QTMovieControllerView;
@@ -41,35 +41,35 @@ type
     {$if defined(__LP64__)}
     _proxy: cint32;
     _delegateProxy: cint32;
-    _useVisualContext: ObjCBOOL;
+    _useVisualContext: objcbool;
     _rendererView_: NSView;
     _movieControllerView_: QTMovieControllerView;
     {$endif}
   public
     function movie: QTMovie; message 'movie';
     procedure setMovie (movie: QTMovie); message 'setMovie:';
-    function preservesAspectRatio: ObjCBOOL; message 'preservesAspectRatio';
-    procedure setPreservesAspectRatio (preservesAspectRatio: ObjCBOOL); message 'setPreservesAspectRatio:';
+    function preservesAspectRatio: objcbool; message 'preservesAspectRatio';
+    procedure setPreservesAspectRatio (preservesAspectRatio: objcbool); message 'setPreservesAspectRatio:';
     function fillColor: NSColor; message 'fillColor';
     procedure setFillColor (fillColor: NSColor); message 'setFillColor:';
-    function isControllerVisible: ObjCBOOL; message 'isControllerVisible';
-    procedure setControllerVisible (controllerVisible: ObjCBOOL); message 'setControllerVisible:';
-    procedure setShowsResizeIndicator (show: ObjCBOOL); message 'setShowsResizeIndicator:';
+    function isControllerVisible: objcbool; message 'isControllerVisible';
+    procedure setControllerVisible (controllerVisible: objcbool); message 'setControllerVisible:';
+    procedure setShowsResizeIndicator (show: objcbool); message 'setShowsResizeIndicator:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    function isBackButtonVisible: ObjCBOOL; message 'isBackButtonVisible';
-    procedure setBackButtonVisible (state: ObjCBOOL); message 'setBackButtonVisible:';
-    function isCustomButtonVisible: ObjCBOOL; message 'isCustomButtonVisible';
-    procedure setCustomButtonVisible (state: ObjCBOOL); message 'setCustomButtonVisible:';
-    function isHotSpotButtonVisible: ObjCBOOL; message 'isHotSpotButtonVisible';
-    procedure setHotSpotButtonVisible (state: ObjCBOOL); message 'setHotSpotButtonVisible:';
-    function areStepButtonsVisible: ObjCBOOL; message 'areStepButtonsVisible';
-    procedure setStepButtonsVisible (state: ObjCBOOL); message 'setStepButtonsVisible:';
-    function isTranslateButtonVisible: ObjCBOOL; message 'isTranslateButtonVisible';
-    procedure setTranslateButtonVisible (state: ObjCBOOL); message 'setTranslateButtonVisible:';
-    function isVolumeButtonVisible: ObjCBOOL; message 'isVolumeButtonVisible';
-    procedure setVolumeButtonVisible (state: ObjCBOOL); message 'setVolumeButtonVisible:';
-    function areZoomButtonsVisible: ObjCBOOL; message 'areZoomButtonsVisible';
-    procedure setZoomButtonsVisible (state: ObjCBOOL); message 'setZoomButtonsVisible:';
+    function isBackButtonVisible: objcbool; message 'isBackButtonVisible';
+    procedure setBackButtonVisible (state: objcbool); message 'setBackButtonVisible:';
+    function isCustomButtonVisible: objcbool; message 'isCustomButtonVisible';
+    procedure setCustomButtonVisible (state: objcbool); message 'setCustomButtonVisible:';
+    function isHotSpotButtonVisible: objcbool; message 'isHotSpotButtonVisible';
+    procedure setHotSpotButtonVisible (state: objcbool); message 'setHotSpotButtonVisible:';
+    function areStepButtonsVisible: objcbool; message 'areStepButtonsVisible';
+    procedure setStepButtonsVisible (state: objcbool); message 'setStepButtonsVisible:';
+    function isTranslateButtonVisible: objcbool; message 'isTranslateButtonVisible';
+    procedure setTranslateButtonVisible (state: objcbool); message 'setTranslateButtonVisible:';
+    function isVolumeButtonVisible: objcbool; message 'isVolumeButtonVisible';
+    procedure setVolumeButtonVisible (state: objcbool); message 'setVolumeButtonVisible:';
+    function areZoomButtonsVisible: objcbool; message 'areZoomButtonsVisible';
+    procedure setZoomButtonsVisible (state: objcbool); message 'setZoomButtonsVisible:';
     {$endif}
     function movieBounds: NSRect; message 'movieBounds';
     function movieControllerBounds: NSRect; message 'movieControllerBounds';
@@ -83,8 +83,8 @@ type
     procedure gotoPosterFrame (sender: id); message 'gotoPosterFrame:';
     procedure stepForward (sender: id); message 'stepForward:';
     procedure stepBackward (sender: id); message 'stepBackward:';
-    function isEditable: ObjCBOOL; message 'isEditable';
-    procedure setEditable (editable: ObjCBOOL); message 'setEditable:';
+    function isEditable: objcbool; message 'isEditable';
+    procedure setEditable (editable: objcbool); message 'setEditable:';
     procedure cut (sender: id); message 'cut:';
     procedure copy_ (sender: id); message 'copy:';
     procedure paste (sender: id); message 'paste:';
@@ -102,7 +102,7 @@ type
 
     { Adopted protocols }
     procedure encodeWithCoder (aCoder: NSCoder); message 'encodeWithCoder:';
-    function validateUserInterfaceItem (anItem: NSValidatedUserInterfaceItemProtocol): ObjCBOOL; message 'validateUserInterfaceItem:';
+    function validateUserInterfaceItem (anItem: NSValidatedUserInterfaceItemProtocol): objcbool; message 'validateUserInterfaceItem:';
   end;
 
 

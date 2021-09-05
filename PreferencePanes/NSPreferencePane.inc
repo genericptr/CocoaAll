@@ -59,7 +59,7 @@ type
     procedure willSelect; message 'willSelect';
     procedure didSelect; message 'didSelect';
     function shouldUnselect: NSPreferencePaneUnselectReply; message 'shouldUnselect';
-    procedure replyToShouldUnselect (shouldUnselect_: ObjCBOOL); message 'replyToShouldUnselect:';
+    procedure replyToShouldUnselect (shouldUnselect_: objcbool); message 'replyToShouldUnselect:';
     procedure willUnselect; message 'willUnselect';
     procedure didUnselect; message 'didUnselect';
     procedure setMainView(newValue: NSView); message 'setMainView:';
@@ -70,8 +70,8 @@ type
     function firstKeyView: NSView; message 'firstKeyView';
     procedure setLastKeyView(newValue: NSView); message 'setLastKeyView:';
     function lastKeyView: NSView; message 'lastKeyView';
-    function autoSaveTextFields: ObjCBOOL; message 'autoSaveTextFields';
-    function isSelected: ObjCBOOL; message 'isSelected';
+    function autoSaveTextFields: objcbool; message 'autoSaveTextFields';
+    function isSelected: objcbool; message 'isSelected';
     procedure updateHelpMenuWithArray (inArrayOfMenuItems: NSArray); message 'updateHelpMenuWithArray:';
   end;
 {$endif}

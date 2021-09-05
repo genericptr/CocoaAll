@@ -121,11 +121,11 @@ type
 
 type
   NSObject_QTMovie_Delegate = objccategory external name 'QTMovie_Delegate' (NSObject)
-    function movie_linkToURL (movie: QTMovie; url: NSURL): ObjCBOOL; message 'movie:linkToURL:';
-    function movieShouldLoadData (sender: id): ObjCBOOL; message 'movieShouldLoadData:';
-    function movieShouldTask (movie: id): ObjCBOOL; message 'movieShouldTask:';
+    function movie_linkToURL (movie: QTMovie; url: NSURL): objcbool; message 'movie:linkToURL:';
+    function movieShouldLoadData (sender: id): objcbool; message 'movieShouldLoadData:';
+    function movieShouldTask (movie: id): objcbool; message 'movieShouldTask:';
     function externalMovie (dictionary: NSDictionary): QTMovie; message 'externalMovie:';
-    function movie_shouldContinueOperation_withPhase_atPercent_withAttributes (movie: QTMovie; op: NSString; phase: QTMovieOperationPhase; percent: NSNumber; attributes: NSDictionary): ObjCBOOL; message 'movie:shouldContinueOperation:withPhase:atPercent:withAttributes:';
+    function movie_shouldContinueOperation_withPhase_atPercent_withAttributes (movie: QTMovie; op: NSString; phase: QTMovieOperationPhase; percent: NSNumber; attributes: NSDictionary): objcbool; message 'movie:shouldContinueOperation:withPhase:atPercent:withAttributes:';
   end;
 
 
@@ -166,10 +166,10 @@ type
 
 type
   QTMovie_Initialization = objccategory external (QTMovie)
-    class function canInitWithPasteboard (pasteboard: NSPasteboard): ObjCBOOL; message 'canInitWithPasteboard:';
-    class function canInitWithFile (fileName: NSString): ObjCBOOL; message 'canInitWithFile:';
-    class function canInitWithURL (url: NSURL): ObjCBOOL; message 'canInitWithURL:';
-    class function canInitWithDataReference (dataReference: QTDataReference): ObjCBOOL; message 'canInitWithDataReference:';
+    class function canInitWithPasteboard (pasteboard: NSPasteboard): objcbool; message 'canInitWithPasteboard:';
+    class function canInitWithFile (fileName: NSString): objcbool; message 'canInitWithFile:';
+    class function canInitWithURL (url: NSURL): objcbool; message 'canInitWithURL:';
+    class function canInitWithDataReference (dataReference: QTDataReference): objcbool; message 'canInitWithDataReference:';
     class function movieFileTypes (types: QTMovieFileTypeOptions): NSArray; message 'movieFileTypes:';
     class function movieUnfilteredFileTypes: NSArray; message 'movieUnfilteredFileTypes';
     class function movieUnfilteredPasteboardTypes: NSArray; message 'movieUnfilteredPasteboardTypes';
@@ -183,7 +183,7 @@ type
     class function movieWithPasteboard_error (pasteboard: NSPasteboard; errorPtr: NSErrorPtr): id; message 'movieWithPasteboard:error:';
     class function movieWithData_error (data: NSData; errorPtr: NSErrorPtr): id; message 'movieWithData:error:';
     {$if  not defined(__LP64__)}
-    class function movieWithQuickTimeMovie_disposeWhenDone_error (movie_: Movie; dispose_: ObjCBOOL; errorPtr: NSErrorPtr): id; message 'movieWithQuickTimeMovie:disposeWhenDone:error:';
+    class function movieWithQuickTimeMovie_disposeWhenDone_error (movie_: Movie; dispose_: objcbool; errorPtr: NSErrorPtr): id; message 'movieWithQuickTimeMovie:disposeWhenDone:error:';
     {$endif}
     class function movieWithAttributes_error (attributes: NSDictionary; errorPtr: NSErrorPtr): id; message 'movieWithAttributes:error:';
     class function movieNamed_error (name: NSString; errorPtr: NSErrorPtr): id; message 'movieNamed:error:';
@@ -194,7 +194,7 @@ type
     function initWithData_error (data: NSData; errorPtr: NSErrorPtr): id; message 'initWithData:error:';
     function initWithMovie_timeRange_error (movie: QTMovie; range: QTTimeRange; errorPtr: NSErrorPtr): id; message 'initWithMovie:timeRange:error:';
     {$if  not defined(__LP64__)}
-    function initWithQuickTimeMovie_disposeWhenDone_error (movie_: Movie; dispose_: ObjCBOOL; errorPtr: NSErrorPtr): id; message 'initWithQuickTimeMovie:disposeWhenDone:error:';
+    function initWithQuickTimeMovie_disposeWhenDone_error (movie_: Movie; dispose_: objcbool; errorPtr: NSErrorPtr): id; message 'initWithQuickTimeMovie:disposeWhenDone:error:';
     {$endif}
     function initWithAttributes_error (attributes: NSDictionary; errorPtr: NSErrorPtr): id; message 'initWithAttributes:error:';
     function movieWithTimeRange_error (range: QTTimeRange; errorPtr: NSErrorPtr): id; message 'movieWithTimeRange:error:';
@@ -229,12 +229,12 @@ type
 type
   QTMovie_Format = objccategory external (QTMovie)
     function movieFormatRepresentation: NSData; message 'movieFormatRepresentation';
-    function writeToFile_withAttributes (fileName: NSString; attributes: NSDictionary): ObjCBOOL; message 'writeToFile:withAttributes:';
+    function writeToFile_withAttributes (fileName: NSString; attributes: NSDictionary): objcbool; message 'writeToFile:withAttributes:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    function writeToFile_withAttributes_error (fileName: NSString; attributes: NSDictionary; errorPtr: NSErrorPtr): ObjCBOOL; message 'writeToFile:withAttributes:error:';
+    function writeToFile_withAttributes_error (fileName: NSString; attributes: NSDictionary; errorPtr: NSErrorPtr): objcbool; message 'writeToFile:withAttributes:error:';
     {$endif}
-    function canUpdateMovieFile: ObjCBOOL; message 'canUpdateMovieFile';
-    function updateMovieFile: ObjCBOOL; message 'updateMovieFile';
+    function canUpdateMovieFile: objcbool; message 'canUpdateMovieFile';
+    function updateMovieFile: objcbool; message 'updateMovieFile';
   end;
 
 type
@@ -261,8 +261,8 @@ type
     procedure setRate (rate: single); message 'setRate:';
     function volume: single; message 'volume';
     procedure setVolume (volume: single); message 'setVolume:';
-    function muted: ObjCBOOL; message 'muted';
-    procedure setMuted (mute: ObjCBOOL); message 'setMuted:';
+    function muted: objcbool; message 'muted';
+    procedure setMuted (mute: objcbool); message 'setMuted:';
   end;
 
 type
@@ -338,21 +338,21 @@ type
     class procedure enterQTKitOnThread; message 'enterQTKitOnThread';
     class procedure enterQTKitOnThreadDisablingThreadSafetyProtection; message 'enterQTKitOnThreadDisablingThreadSafetyProtection';
     class procedure exitQTKitOnThread; message 'exitQTKitOnThread';
-    function attachToCurrentThread: ObjCBOOL; message 'attachToCurrentThread';
-    function detachFromCurrentThread: ObjCBOOL; message 'detachFromCurrentThread';
-    procedure setIdling (state: ObjCBOOL); message 'setIdling:';
-    function isIdling: ObjCBOOL; message 'isIdling';
+    function attachToCurrentThread: objcbool; message 'attachToCurrentThread';
+    function detachFromCurrentThread: objcbool; message 'detachFromCurrentThread';
+    procedure setIdling (state: objcbool); message 'setIdling:';
+    function isIdling: objcbool; message 'isIdling';
     {$endif}
   end;
 
 type
   QTMovie_Chapters = objccategory external (QTMovie)
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_2)}
-    function hasChapters: ObjCBOOL; message 'hasChapters';
+    function hasChapters: objcbool; message 'hasChapters';
     function chapterCount: NSInteger; message 'chapterCount';
     function chapters: NSArray; message 'chapters';
     procedure addChapters_withAttributes_error (chapters: NSArray; attributes: NSDictionary; errorPtr: NSErrorPtr); message 'addChapters:withAttributes:error:';
-    function removeChapters: ObjCBOOL; message 'removeChapters';
+    function removeChapters: objcbool; message 'removeChapters';
     function startTimeOfChapter (chapterIndex: NSInteger): QTTime; message 'startTimeOfChapter:';
     function chapterIndexForTime (time: QTTime): NSInteger; message 'chapterIndexForTime:';
     {$endif}

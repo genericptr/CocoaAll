@@ -4,8 +4,8 @@ This repository contains a merge of all available Cocoa frameworks for Free Pasc
 
 ### Original SDKs
 
-https://github.com/genericptr/MacOS_11_0
-https://github.com/genericptr/MacOS_10_10
+* https://github.com/genericptr/MacOS_11_0
+* https://github.com/genericptr/MacOS_10_10
 
 ### Frameworks from macOS 11.3 SDK
 

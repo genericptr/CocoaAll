@@ -35,8 +35,8 @@ type
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_6_3)}
     function minimumVideoFrameInterval: NSTimeInterval; message 'minimumVideoFrameInterval';
     procedure setMinimumVideoFrameInterval (minimumVideoFrameInterval: NSTimeInterval); message 'setMinimumVideoFrameInterval:';
-    function automaticallyDropsLateVideoFrames: ObjCBOOL; message 'automaticallyDropsLateVideoFrames';
-    procedure setAutomaticallyDropsLateVideoFrames (automaticallyDropsLateVideoFrames: ObjCBOOL); message 'setAutomaticallyDropsLateVideoFrames:';
+    function automaticallyDropsLateVideoFrames: objcbool; message 'automaticallyDropsLateVideoFrames';
+    procedure setAutomaticallyDropsLateVideoFrames (automaticallyDropsLateVideoFrames: objcbool); message 'setAutomaticallyDropsLateVideoFrames:';
     {$endif}
     function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';

@@ -32,11 +32,11 @@ type
     function authors: NSArray; message 'authors';
     function contributors: NSArray; message 'contributors';
     function enclosures: NSArray; message 'enclosures';
-    function isCurrent: ObjCBOOL; message 'isCurrent';
-    procedure setRead(newValue: ObjCBOOL); message 'setRead:';
-    function isRead: ObjCBOOL; message 'isRead';
-    procedure setFlagged(newValue: ObjCBOOL); message 'setFlagged:';
-    function isFlagged: ObjCBOOL; message 'isFlagged';
+    function isCurrent: objcbool; message 'isCurrent';
+    procedure setRead(newValue: objcbool); message 'setRead:';
+    function isRead: objcbool; message 'isRead';
+    procedure setFlagged(newValue: objcbool); message 'setFlagged:';
+    function isFlagged: objcbool; message 'isFlagged';
     function localDateCreated: NSDate; message 'localDateCreated';
     function localDateUpdated: NSDate; message 'localDateUpdated';
     function titleForDisplay: NSString; message 'titleForDisplay';

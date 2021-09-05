@@ -54,15 +54,15 @@ type
     function nextPane_: InstallerPane; message 'nextPane';
     procedure willEnterPane (dir: InstallerSectionDirection); message 'willEnterPane:';
     procedure didEnterPane (dir: InstallerSectionDirection); message 'didEnterPane:';
-    function shouldExitPane (dir: InstallerSectionDirection): ObjCBOOL; message 'shouldExitPane:';
+    function shouldExitPane (dir: InstallerSectionDirection): objcbool; message 'shouldExitPane:';
     procedure willExitPane (dir: InstallerSectionDirection); message 'willExitPane:';
     procedure didExitPane (dir: InstallerSectionDirection); message 'didExitPane:';
-    procedure setNextEnabled(newValue: ObjCBOOL); message 'setNextEnabled:';
-    function nextEnabled: ObjCBOOL; message 'nextEnabled';
-    procedure setPreviousEnabled(newValue: ObjCBOOL); message 'setPreviousEnabled:';
-    function previousEnabled: ObjCBOOL; message 'previousEnabled';
-    function gotoNextPane: ObjCBOOL; message 'gotoNextPane';
-    function gotoPreviousPane: ObjCBOOL; message 'gotoPreviousPane';
+    procedure setNextEnabled(newValue: objcbool); message 'setNextEnabled:';
+    function nextEnabled: objcbool; message 'nextEnabled';
+    procedure setPreviousEnabled(newValue: objcbool); message 'setPreviousEnabled:';
+    function previousEnabled: objcbool; message 'previousEnabled';
+    function gotoNextPane: objcbool; message 'gotoNextPane';
+    function gotoPreviousPane: objcbool; message 'gotoPreviousPane';
   end;
 {$endif}
 

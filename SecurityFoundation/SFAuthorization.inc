@@ -21,8 +21,8 @@ type
     function initWithFlags_rights_environment (flags: AuthorizationFlags; rights: AuthorizationRightsPtr; environment: AuthorizationEnvironmentPtr): id; message 'initWithFlags:rights:environment:';
     function init: id; message 'init';
     procedure invalidateCredentials; message 'invalidateCredentials';
-    function obtainWithRight_flags_error (rightName: AuthorizationString; flags: AuthorizationFlags; error: NSErrorPtr): ObjCBOOL; message 'obtainWithRight:flags:error:';
-    function obtainWithRights_flags_environment_authorizedRights_error (rights: AuthorizationRightsPtr; flags: AuthorizationFlags; environment: AuthorizationEnvironmentPtr; authorizedRights: AuthorizationRightsPtrPtr; error: NSErrorPtr): ObjCBOOL; message 'obtainWithRights:flags:environment:authorizedRights:error:';
+    function obtainWithRight_flags_error (rightName: AuthorizationString; flags: AuthorizationFlags; error: NSErrorPtr): objcbool; message 'obtainWithRight:flags:error:';
+    function obtainWithRights_flags_environment_authorizedRights_error (rights: AuthorizationRightsPtr; flags: AuthorizationFlags; environment: AuthorizationEnvironmentPtr; authorizedRights: AuthorizationRightsPtrPtr; error: NSErrorPtr): objcbool; message 'obtainWithRights:flags:environment:authorizedRights:error:';
 
     { Adopted protocols }
     procedure encodeWithCoder (aCoder: NSCoder); message 'encodeWithCoder:';

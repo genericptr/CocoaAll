@@ -42,7 +42,7 @@ type
     function firstKeyView: NSView; message 'firstKeyView';
     function firstResponder: NSResponder; message 'firstResponder';
     function lastKeyView: NSView; message 'lastKeyView';
-    procedure setEnabled (inEnabled: ObjCBOOL); message 'setEnabled:';
+    procedure setEnabled (inEnabled: objcbool); message 'setEnabled:';
     function viewForType (inType: SFViewType): NSView; message 'viewForType:';
   end;
 
@@ -50,7 +50,7 @@ type
 type
   SFHostControl = objccategory external (SFAuthorizationPluginView)
     procedure displayView; message 'displayView';
-    procedure setButton_enabled (inButtonType: SFButtonType; inEnabled: ObjCBOOL); message 'setButton:enabled:';
+    procedure setButton_enabled (inButtonType: SFButtonType; inEnabled: objcbool); message 'setButton:enabled:';
     procedure updateView; message 'updateView';
   end;
 {$endif}

@@ -31,7 +31,7 @@ type
     _internal: QTMovieModernizerInternal;
   public
     function initWithSourceURL_destinationURL (source: NSURL; destination: NSURL): id; message 'initWithSourceURL:destinationURL:';
-    class function requiresModernization_error (source: NSURL; outError: NSErrorPtr): ObjCBOOL; message 'requiresModernization:error:';
+    class function requiresModernization_error (source: NSURL; outError: NSErrorPtr): objcbool; message 'requiresModernization:error:';
     procedure modernizeWithCompletionHandler (handler: OpaqueCBlock); message 'modernizeWithCompletionHandler:';
     procedure cancel; message 'cancel';
     {function AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER: NSURL *; message 'AVAILABLE_QTKIT_VERSION_7_7_3_AND_LATER';

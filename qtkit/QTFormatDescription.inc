@@ -23,7 +23,7 @@ type
     function quickTimeSampleDescription: NSData; message 'quickTimeSampleDescription';
     function formatDescriptionAttributes: NSDictionary; message 'formatDescriptionAttributes';
     function attributeForKey (key: NSString): id; message 'attributeForKey:';
-    function isEqualToFormatDescription (formatDescription: QTFormatDescription): ObjCBOOL; message 'isEqualToFormatDescription:';
+    function isEqualToFormatDescription (formatDescription: QTFormatDescription): objcbool; message 'isEqualToFormatDescription:';
   end;
 {$endif}
 

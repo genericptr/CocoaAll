@@ -33,7 +33,7 @@ type
     function attributes: NSDictionary; message 'attributes';
     function inputKeys: NSArray; message 'inputKeys';
     function outputKeys: NSArray; message 'outputKeys';
-    function setValue_forInputKey (value: id; key: NSString): ObjCBOOL; message 'setValue:forInputKey:';
+    function setValue_forInputKey (value: id; key: NSString): objcbool; message 'setValue:forInputKey:';
     function valueForInputKey (key: NSString): id; message 'valueForInputKey:';
     function valueForOutputKey (key: NSString): id; message 'valueForOutputKey:';
     {$if (defined(MAC_OS_X_VERSION_10_5)) and ((MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5))}
@@ -58,7 +58,7 @@ type
     function initOffScreenWithSize_colorSpace_composition (size: NSSize; colorSpace: CGColorSpaceRef; composition: QCComposition): id; message 'initOffScreenWithSize:colorSpace:composition:';
     {$endif}
     function initWithOpenGLContext_pixelFormat_file (context: NSOpenGLContext; format: NSOpenGLPixelFormat; path: NSString): id; message 'initWithOpenGLContext:pixelFormat:file:';
-    function renderAtTime_arguments (time: NSTimeInterval; arguments: NSDictionary): ObjCBOOL; message 'renderAtTime:arguments:';
+    function renderAtTime_arguments (time: NSTimeInterval; arguments: NSDictionary): objcbool; message 'renderAtTime:arguments:';
     function renderingTimeForTime_arguments (time: NSTimeInterval; arguments: NSDictionary): NSTimeInterval; message 'renderingTimeForTime:arguments:';
     {$if (defined(MAC_OS_X_VERSION_10_5)) and ((MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5))}
     function composition: QCComposition; message 'composition';
@@ -72,7 +72,7 @@ type
     function outputKeys: NSArray; message 'outputKeys';
     function propertyListFromInputValues: id; message 'propertyListFromInputValues';
     procedure setInputValuesWithPropertyList (plist: id); message 'setInputValuesWithPropertyList:';
-    function setValue_forInputKey (value: id; key: NSString): ObjCBOOL; message 'setValue:forInputKey:';
+    function setValue_forInputKey (value: id; key: NSString): objcbool; message 'setValue:forInputKey:';
     function userInfo: NSMutableDictionary; message 'userInfo';
     function valueForInputKey (key: NSString): id; message 'valueForInputKey:';
     function valueForOutputKey (key: NSString): id; message 'valueForOutputKey:';

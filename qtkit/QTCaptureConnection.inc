@@ -20,11 +20,11 @@ type
     function owner: id; message 'owner';
     function mediaType: NSString; message 'mediaType';
     function formatDescription: QTFormatDescription; message 'formatDescription';
-    function isEnabled: ObjCBOOL; message 'isEnabled';
-    procedure setEnabled (enabled: ObjCBOOL); message 'setEnabled:';
+    function isEnabled: objcbool; message 'isEnabled';
+    procedure setEnabled (enabled: objcbool); message 'setEnabled:';
     function connectionAttributes: NSDictionary; message 'connectionAttributes';
     procedure setConnectionAttributes (connectionAttributes: NSDictionary); message 'setConnectionAttributes:';
-    function attributeIsReadOnly (attributeKey: NSString): ObjCBOOL; message 'attributeIsReadOnly:';
+    function attributeIsReadOnly (attributeKey: NSString): objcbool; message 'attributeIsReadOnly:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (attribute: id; key: NSString); message 'setAttribute:forKey:';
   end;

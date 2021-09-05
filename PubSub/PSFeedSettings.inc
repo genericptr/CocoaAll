@@ -28,10 +28,10 @@ type
     function refreshInterval: NSTimeInterval; message 'refreshInterval';
     procedure setExpirationInterval(newValue: NSTimeInterval); message 'setExpirationInterval:';
     function expirationInterval: NSTimeInterval; message 'expirationInterval';
-    procedure setRefreshesInBackground(newValue: ObjCBOOL); message 'setRefreshesInBackground:';
-    function refreshesInBackground: ObjCBOOL; message 'refreshesInBackground';
-    procedure setDownloadsEnclosures(newValue: ObjCBOOL); message 'setDownloadsEnclosures:';
-    function downloadsEnclosures: ObjCBOOL; message 'downloadsEnclosures';
+    procedure setRefreshesInBackground(newValue: objcbool); message 'setRefreshesInBackground:';
+    function refreshesInBackground: objcbool; message 'refreshesInBackground';
+    procedure setDownloadsEnclosures(newValue: objcbool); message 'setDownloadsEnclosures:';
+    function downloadsEnclosures: objcbool; message 'downloadsEnclosures';
     procedure setMaxEnclosureSize(newValue: double); message 'setMaxEnclosureSize:';
     function maxEnclosureSize: double; message 'maxEnclosureSize';
     procedure setEnclosureTypes(newValue: NSArray); message 'setEnclosureTypes:';

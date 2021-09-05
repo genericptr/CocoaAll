@@ -20,7 +20,7 @@ type
     _saveChangesButton: NSButton;
     _cancelButton: NSButton;
     _defaultMessage: NSString;
-    _saveChanges: ObjCBOOL;
+    _saveChanges: objcbool;
     _reserved_SFCertificateTrustPanel_: id;
     {$endif}
   public

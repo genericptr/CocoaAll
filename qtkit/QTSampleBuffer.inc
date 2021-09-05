@@ -48,7 +48,7 @@ type
 type
   QTAudioSampleBuffer = objccategory external (QTSampleBuffer)
     function audioBufferListWithOptions (options: QTSampleBufferAudioBufferListOptions): AudioBufferListPtr; message 'audioBufferListWithOptions:';
-    function getAudioStreamPacketDescriptions_inRange (audioStreamPacketDescriptions: AudioStreamPacketDescriptionPtr; range: NSRange): ObjCBOOL; message 'getAudioStreamPacketDescriptions:inRange:';
+    function getAudioStreamPacketDescriptions_inRange (audioStreamPacketDescriptions: AudioStreamPacketDescriptionPtr; range: NSRange): objcbool; message 'getAudioStreamPacketDescriptions:inRange:';
   end;
 {$endif}
 

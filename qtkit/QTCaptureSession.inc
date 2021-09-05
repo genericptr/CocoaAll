@@ -19,12 +19,12 @@ type
     _reserved3: clong;
   public
     function inputs: NSArray; message 'inputs';
-    function addInput_error (input: QTCaptureInput; errorPtr: NSErrorPtr): ObjCBOOL; message 'addInput:error:';
+    function addInput_error (input: QTCaptureInput; errorPtr: NSErrorPtr): objcbool; message 'addInput:error:';
     procedure removeInput (input: QTCaptureInput); message 'removeInput:';
     function outputs: NSArray; message 'outputs';
-    function addOutput_error (output: QTCaptureOutput; errorPtr: NSErrorPtr): ObjCBOOL; message 'addOutput:error:';
+    function addOutput_error (output: QTCaptureOutput; errorPtr: NSErrorPtr): objcbool; message 'addOutput:error:';
     procedure removeOutput (output: QTCaptureOutput); message 'removeOutput:';
-    function isRunning: ObjCBOOL; message 'isRunning';
+    function isRunning: objcbool; message 'isRunning';
     procedure startRunning; message 'startRunning';
     procedure stopRunning; message 'stopRunning';
   end;

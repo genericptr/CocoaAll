@@ -38,7 +38,7 @@ type
     procedure setMediaAttributes (attributes: NSDictionary); message 'setMediaAttributes:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (value: id; attributeKey: NSString); message 'setAttribute:forKey:';
-    function hasCharacteristic (characteristic: NSString): ObjCBOOL; message 'hasCharacteristic:';
+    function hasCharacteristic (characteristic: NSString): objcbool; message 'hasCharacteristic:';
     {$if  not defined(__LP64__)}
     function quickTimeMedia: Media; message 'quickTimeMedia';
     {$endif}

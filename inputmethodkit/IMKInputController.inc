@@ -18,10 +18,10 @@ var
 
 type
   IMKServerInput = objccategory external (NSObject)
-    function inputText_key_modifiers_client (string_: NSString; keyCode: NSInteger; flags: NSUInteger; sender: id): ObjCBOOL; message 'inputText:key:modifiers:client:';
-    function inputText_client (string_: NSString; sender: id): ObjCBOOL; message 'inputText:client:';
-    function handleEvent_client (event: NSEvent; sender: id): ObjCBOOL; message 'handleEvent:client:';
-    function didCommandBySelector_client (aSelector: SEL; sender: id): ObjCBOOL; message 'didCommandBySelector:client:';
+    function inputText_key_modifiers_client (string_: NSString; keyCode: NSInteger; flags: NSUInteger; sender: id): objcbool; message 'inputText:key:modifiers:client:';
+    function inputText_client (string_: NSString; sender: id): objcbool; message 'inputText:client:';
+    function handleEvent_client (event: NSEvent; sender: id): objcbool; message 'handleEvent:client:';
+    function didCommandBySelector_client (aSelector: SEL; sender: id): objcbool; message 'didCommandBySelector:client:';
     function composedString (sender: id): id; message 'composedString:';
     function originalString (sender: id): NSAttributedString; message 'originalString:';
     procedure commitComposition (sender: id); message 'commitComposition:';
@@ -44,9 +44,9 @@ type
 
 type
   IMKMouseHandlingProtocol = objcprotocol external name 'IMKMouseHandling'
-    function mouseDownOnCharacterIndex_coordinate_withModifier_continueTracking_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; keepTracking: pObjCBOOL; sender: id): ObjCBOOL; message 'mouseDownOnCharacterIndex:coordinate:withModifier:continueTracking:client:';
-    function mouseUpOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): ObjCBOOL; message 'mouseUpOnCharacterIndex:coordinate:withModifier:client:';
-    function mouseMovedOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): ObjCBOOL; message 'mouseMovedOnCharacterIndex:coordinate:withModifier:client:';
+    function mouseDownOnCharacterIndex_coordinate_withModifier_continueTracking_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; keepTracking: pObjCBOOL; sender: id): objcbool; message 'mouseDownOnCharacterIndex:coordinate:withModifier:continueTracking:client:';
+    function mouseUpOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): objcbool; message 'mouseUpOnCharacterIndex:coordinate:withModifier:client:';
+    function mouseMovedOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): objcbool; message 'mouseMovedOnCharacterIndex:coordinate:withModifier:client:';
   end;
 {$endif}
 
@@ -80,9 +80,9 @@ type
     procedure activateServer (sender: id); message 'activateServer:';
     procedure deactivateServer (sender: id); message 'deactivateServer:';
     function modes (sender: id): NSDictionary; message 'modes:';
-    function mouseDownOnCharacterIndex_coordinate_withModifier_continueTracking_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; keepTracking: pObjCBOOL; sender: id): ObjCBOOL; message 'mouseDownOnCharacterIndex:coordinate:withModifier:continueTracking:client:';
-    function mouseMovedOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): ObjCBOOL; message 'mouseMovedOnCharacterIndex:coordinate:withModifier:client:';
-    function mouseUpOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): ObjCBOOL; message 'mouseUpOnCharacterIndex:coordinate:withModifier:client:';
+    function mouseDownOnCharacterIndex_coordinate_withModifier_continueTracking_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; keepTracking: pObjCBOOL; sender: id): objcbool; message 'mouseDownOnCharacterIndex:coordinate:withModifier:continueTracking:client:';
+    function mouseMovedOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): objcbool; message 'mouseMovedOnCharacterIndex:coordinate:withModifier:client:';
+    function mouseUpOnCharacterIndex_coordinate_withModifier_client (index: NSUInteger; point: NSPoint; flags: NSUInteger; sender: id): objcbool; message 'mouseUpOnCharacterIndex:coordinate:withModifier:client:';
     function recognizedEvents (sender: id): NSUInteger; message 'recognizedEvents:';
     procedure setValue_forTag_client (value: id; tag: clong; sender: id); message 'setValue:forTag:client:';
     procedure showPreferences (sender: id); message 'showPreferences:';

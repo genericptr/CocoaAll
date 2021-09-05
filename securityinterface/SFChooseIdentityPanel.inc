@@ -39,8 +39,8 @@ type
     function policies: NSArray; message 'policies';
     procedure setDefaultButtonTitle (title: NSString); message 'setDefaultButtonTitle:';
     procedure setAlternateButtonTitle (title: NSString); message 'setAlternateButtonTitle:';
-    procedure setShowsHelp (showsHelp: ObjCBOOL); message 'setShowsHelp:';
-    function showsHelp: ObjCBOOL; message 'showsHelp';
+    procedure setShowsHelp (showsHelp: objcbool); message 'setShowsHelp:';
+    function showsHelp: objcbool; message 'showsHelp';
     procedure setHelpAnchor (anchor: NSString); message 'setHelpAnchor:';
     function helpAnchor: NSString; message 'helpAnchor';
     procedure setInformativeText (informativeText: NSString); message 'setInformativeText:';
@@ -52,7 +52,7 @@ type
 
 type
   SFChooseIdentityPanelDelegate = objccategory external (NSObject)
-    function chooseIdentityPanelShowHelp (sender: SFChooseIdentityPanel): ObjCBOOL; message 'chooseIdentityPanelShowHelp:';
+    function chooseIdentityPanelShowHelp (sender: SFChooseIdentityPanel): objcbool; message 'chooseIdentityPanelShowHelp:';
   end;
 {$endif}
 

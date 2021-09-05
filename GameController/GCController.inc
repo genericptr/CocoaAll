@@ -25,7 +25,7 @@ type
     procedure setControllerPausedHandler(newValue: OpaqueCBlock); message 'setControllerPausedHandler:';
     function controllerPausedHandler: OpaqueCBlock; message 'controllerPausedHandler';
     function vendorName: NSString; message 'vendorName';
-    function isAttachedToDevice: ObjCBOOL; message 'isAttachedToDevice';
+    function isAttachedToDevice: objcbool; message 'isAttachedToDevice';
     procedure setPlayerIndex(newValue: NSInteger); message 'setPlayerIndex:';
     function playerIndex: NSInteger; message 'playerIndex';
     function gamepad: GCGamepad; message 'gamepad';

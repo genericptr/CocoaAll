@@ -34,12 +34,12 @@ type
     function discoveryDelegate_: AVB17221EntityDiscoveryDelegateProtocol; message 'discoveryDelegate';
     function initWithInterfaceName (anInterfaceName: NSString): instancetype; message 'initWithInterfaceName:';
     procedure primeIterators; message 'primeIterators';
-    function discoverEntities: ObjCBOOL; message 'discoverEntities';
-    function discoverEntity (entityID: cuint64): ObjCBOOL; message 'discoverEntity:';
-    function addLocalEntity_error (anEntity: AVB17221Entity; error: NSErrorPtr): ObjCBOOL; message 'addLocalEntity:error:';
-    function removeLocalEntity_error (guid: cuint64; error: NSErrorPtr): ObjCBOOL; message 'removeLocalEntity:error:';
-    function changeEntityWithGUID_toNewASGrandmasterID_error (entityGUID: cuint64; asGrandmasterID: cuint64; error: NSErrorPtr): ObjCBOOL; message 'changeEntityWithGUID:toNewASGrandmasterID:error:'; deprecated 'in 10_8, 10_9, NA, NA';
-    function changeEntityWithEntityID_toNewGPTPGrandmasterID_error (entityID: cuint64; gPTPGrandmasterID: cuint64; error: NSErrorPtr): ObjCBOOL; message 'changeEntityWithEntityID:toNewGPTPGrandmasterID:error:'; { available in 10_9, NA }
+    function discoverEntities: objcbool; message 'discoverEntities';
+    function discoverEntity (entityID: cuint64): objcbool; message 'discoverEntity:';
+    function addLocalEntity_error (anEntity: AVB17221Entity; error: NSErrorPtr): objcbool; message 'addLocalEntity:error:';
+    function removeLocalEntity_error (guid: cuint64; error: NSErrorPtr): objcbool; message 'removeLocalEntity:error:';
+    function changeEntityWithGUID_toNewASGrandmasterID_error (entityGUID: cuint64; asGrandmasterID: cuint64; error: NSErrorPtr): objcbool; message 'changeEntityWithGUID:toNewASGrandmasterID:error:'; deprecated 'in 10_8, 10_9, NA, NA';
+    function changeEntityWithEntityID_toNewGPTPGrandmasterID_error (entityID: cuint64; gPTPGrandmasterID: cuint64; error: NSErrorPtr): objcbool; message 'changeEntityWithEntityID:toNewGPTPGrandmasterID:error:'; { available in 10_9, NA }
   end;
 {$endif}
 

@@ -29,7 +29,7 @@ type
   AVCaptureView = objcclass external (NSView)
   public
     function session: AVCaptureSession; message 'session';
-    procedure setSession_showVideoPreview_showAudioPreview (session_: AVCaptureSession; showVideoPreview: ObjCBOOL; showAudioPreview: ObjCBOOL); message 'setSession:showVideoPreview:showAudioPreview:';
+    procedure setSession_showVideoPreview_showAudioPreview (session_: AVCaptureSession; showVideoPreview: objcbool; showAudioPreview: objcbool); message 'setSession:showVideoPreview:showAudioPreview:';
     function fileOutput: AVCaptureFileOutput; message 'fileOutput';
     procedure setDelegate(newValue: AVCaptureViewDelegateProtocol); message 'setDelegate:';
     function delegate: AVCaptureViewDelegateProtocol; message 'delegate';

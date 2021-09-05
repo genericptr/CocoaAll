@@ -23,8 +23,8 @@ type
     function initWithName_bundleIdentifier (name: NSString; bundleIdentifier: NSString): id; message 'initWithName:bundleIdentifier:';
     function initWithName_controllerClass_delegateClass (name: NSString; controllerClassID: pobjc_class; delegateClassID: pobjc_class): id; message 'initWithName:controllerClass:delegateClass:';
     function bundle: NSBundle; message 'bundle';
-    function paletteWillTerminate: ObjCBOOL; message 'paletteWillTerminate';
-    function lastKeyEventWasDeadKey: ObjCBOOL; message 'lastKeyEventWasDeadKey';
+    function paletteWillTerminate: objcbool; message 'paletteWillTerminate';
+    function lastKeyEventWasDeadKey: objcbool; message 'lastKeyEventWasDeadKey';
   end;
 {$endif}
 

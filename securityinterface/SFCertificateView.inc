@@ -18,17 +18,17 @@ type
     function certificate: SecCertificateRef; message 'certificate';
     procedure setPolicies (policies: id); message 'setPolicies:';
     function policies: NSArray; message 'policies';
-    procedure setEditableTrust (editable: ObjCBOOL); message 'setEditableTrust:';
-    function isEditable: ObjCBOOL; message 'isEditable';
-    procedure setDisplayTrust (display: ObjCBOOL); message 'setDisplayTrust:';
-    function isTrustDisplayed: ObjCBOOL; message 'isTrustDisplayed';
+    procedure setEditableTrust (editable: objcbool); message 'setEditableTrust:';
+    function isEditable: objcbool; message 'isEditable';
+    procedure setDisplayTrust (display: objcbool); message 'setDisplayTrust:';
+    function isTrustDisplayed: objcbool; message 'isTrustDisplayed';
     procedure saveTrustSettings; message 'saveTrustSettings';
-    procedure setDisplayDetails (display: ObjCBOOL); message 'setDisplayDetails:';
-    function detailsDisplayed: ObjCBOOL; message 'detailsDisplayed';
-    procedure setDetailsDisclosed (disclosed: ObjCBOOL); message 'setDetailsDisclosed:';
-    function detailsDisclosed: ObjCBOOL; message 'detailsDisclosed';
-    procedure setPoliciesDisclosed (disclosed: ObjCBOOL); message 'setPoliciesDisclosed:';
-    function policiesDisclosed: ObjCBOOL; message 'policiesDisclosed';
+    procedure setDisplayDetails (display: objcbool); message 'setDisplayDetails:';
+    function detailsDisplayed: objcbool; message 'detailsDisplayed';
+    procedure setDetailsDisclosed (disclosed: objcbool); message 'setDetailsDisclosed:';
+    function detailsDisclosed: objcbool; message 'detailsDisclosed';
+    procedure setPoliciesDisclosed (disclosed: objcbool); message 'setPoliciesDisclosed:';
+    function policiesDisclosed: objcbool; message 'policiesDisclosed';
   end;
 {$endif}
 

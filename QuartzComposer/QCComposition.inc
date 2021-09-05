@@ -98,7 +98,7 @@ type
     _backing: id;
     _identifier: NSString;
     _timestamp: NSTimeInterval;
-    _stateOK: ObjCBOOL;
+    _stateOK: objcbool;
   public
     class function compositionWithFile (path: NSString): QCComposition; message 'compositionWithFile:';
     class function compositionWithData (data: NSData): QCComposition; message 'compositionWithData:';

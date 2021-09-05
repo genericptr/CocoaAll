@@ -22,7 +22,7 @@ type
     {$else}
     function collection_: GCControllerElement; message 'collection';
     {$endif}
-    function isAnalog: ObjCBOOL; message 'isAnalog';
+    function isAnalog: objcbool; message 'isAnalog';
   end;
 {$endif}
 

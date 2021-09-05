@@ -20,7 +20,7 @@ type
     function mediaType: NSString; message 'mediaType';
     function localizedDisplayName: NSString; message 'localizedDisplayName';
     function localizedCompressionOptionsSummary: NSString; message 'localizedCompressionOptionsSummary';
-    function isEqualToCompressionOptions (compressionOptions: QTCompressionOptions): ObjCBOOL; message 'isEqualToCompressionOptions:';
+    function isEqualToCompressionOptions (compressionOptions: QTCompressionOptions): objcbool; message 'isEqualToCompressionOptions:';
   end;
 {$endif}
 

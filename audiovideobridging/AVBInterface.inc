@@ -54,8 +54,8 @@ type
     function acmp: AVB17221ACMPInterface; message 'acmp';
     class function macAddressForInterfaceNamed (anInterfaceName: NSString): AVBMACAddress; message 'macAddressForInterfaceNamed:';
     class function supportedInterfaces: NSArray; message 'supportedInterfaces';
-    class function isAVBEnabledOnInterfaceNamed (anInterfaceName: NSString): ObjCBOOL; message 'isAVBEnabledOnInterfaceNamed:';
-    class function isAVBCapableInterfaceNamed (anInterfaceName: NSString): ObjCBOOL; message 'isAVBCapableInterfaceNamed:';
+    class function isAVBEnabledOnInterfaceNamed (anInterfaceName: NSString): objcbool; message 'isAVBEnabledOnInterfaceNamed:';
+    class function isAVBCapableInterfaceNamed (anInterfaceName: NSString): objcbool; message 'isAVBCapableInterfaceNamed:';
     function initWithInterfaceName (anInterfaceName: NSString): instancetype; message 'initWithInterfaceName:';
     class function myGUID: cuint64; message 'myGUID';
     class function myEntityID: cuint64; message 'myEntityID';

@@ -28,13 +28,13 @@ type
     function apiMajorVersion: NSUInteger; message 'apiMajorVersion';
     function apiMinorVersion: NSUInteger; message 'apiMinorVersion';
     function musicFolderLocation: NSURL; message 'musicFolderLocation';
-    function shouldShowContentRating: ObjCBOOL; message 'shouldShowContentRating';
+    function shouldShowContentRating: objcbool; message 'shouldShowContentRating';
     function allMediaItems: NSArray; message 'allMediaItems';
     function allPlaylists: NSArray; message 'allPlaylists';
     class function libraryWithAPIVersion_error (requestedAPIVersion: NSString; error: NSErrorPtr): id; message 'libraryWithAPIVersion:error:';
     function initWithAPIVersion_error (requestedAPIVersion: NSString; error: NSErrorPtr): id; message 'initWithAPIVersion:error:';
     function artworkForMediaFile (mediaFileURL: NSURL): ITLibArtwork; message 'artworkForMediaFile:';
-    function reloadData: ObjCBOOL; message 'reloadData';
+    function reloadData: objcbool; message 'reloadData';
   end;
 {$endif}
 

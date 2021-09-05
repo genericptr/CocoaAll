@@ -41,8 +41,8 @@ type
     {$endif}
     function movie: QTMovie; message 'movie';
     function media: QTMedia; message 'media';
-    function isEnabled: ObjCBOOL; message 'isEnabled';
-    procedure setEnabled (enabled: ObjCBOOL); message 'setEnabled:';
+    function isEnabled: objcbool; message 'isEnabled';
+    procedure setEnabled (enabled: objcbool); message 'setEnabled:';
     function volume: single; message 'volume';
     procedure setVolume (volume: single); message 'setVolume:';
     function trackAttributes: NSDictionary; message 'trackAttributes';

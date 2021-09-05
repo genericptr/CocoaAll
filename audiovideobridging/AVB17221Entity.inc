@@ -12,7 +12,7 @@ type
   AVB17221Entity = objcclass external (NSObject)
   private
     {$ifndef _LP64}
-    localEntity: ObjCBOOL;
+    localEntity: objcbool;
     timeToLive: cuint8;
     entityID: cuint64;
     entityModelID: cuint64;
@@ -37,8 +37,8 @@ type
     interestNotficiation: io_object_t;
     notificationPort: IONotificationPortRef;
   public
-    procedure setLocalEntity(newValue: ObjCBOOL); message 'setLocalEntity:';
-    function isLocalEntity: ObjCBOOL; message 'isLocalEntity';
+    procedure setLocalEntity(newValue: objcbool); message 'setLocalEntity:';
+    function isLocalEntity: objcbool; message 'isLocalEntity';
     procedure setTimeToLive(newValue: cuint8); message 'setTimeToLive:';
     function timeToLive_: cuint8; message 'timeToLive';
     procedure setGuid(newValue: cuint64); message 'setGuid:';

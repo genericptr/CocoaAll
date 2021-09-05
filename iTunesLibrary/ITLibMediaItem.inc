@@ -65,7 +65,7 @@ type
     function composer: NSString; message 'composer';
     function sortComposer: NSString; message 'sortComposer';
     function rating: NSInteger; message 'rating';
-    function isRatingComputed: ObjCBOOL; message 'isRatingComputed';
+    function isRatingComputed: objcbool; message 'isRatingComputed';
     function startTime: NSUInteger; message 'startTime';
     function stopTime: NSUInteger; message 'stopTime';
     function album: ITLibAlbum; message 'album';
@@ -88,13 +88,13 @@ type
     function playCount: NSUInteger; message 'playCount';
     function lastPlayedDate: NSDate; message 'lastPlayedDate';
     function location: NSURL; message 'location';
-    function hasArtworkAvailable: ObjCBOOL; message 'hasArtworkAvailable';
+    function hasArtworkAvailable: objcbool; message 'hasArtworkAvailable';
     function artwork: ITLibArtwork; message 'artwork';
     function comments: NSString; message 'comments';
-    function isPurchased: ObjCBOOL; message 'isPurchased';
-    function isCloud: ObjCBOOL; message 'isCloud';
-    function isDRMProtected: ObjCBOOL; message 'isDRMProtected';
-    function isVideo: ObjCBOOL; message 'isVideo';
+    function isPurchased: objcbool; message 'isPurchased';
+    function isCloud: objcbool; message 'isCloud';
+    function isDRMProtected: objcbool; message 'isDRMProtected';
+    function isVideo: objcbool; message 'isVideo';
     function videoInfo: ITLibMediaItemVideoInfo; message 'videoInfo';
     function releaseDate: NSDate; message 'releaseDate';
     function year: NSUInteger; message 'year';
@@ -104,7 +104,7 @@ type
     function voiceOverLanguage: NSString; message 'voiceOverLanguage';
     function volumeAdjustment: NSInteger; message 'volumeAdjustment';
     function volumeNormalizationEnergy: NSUInteger; message 'volumeNormalizationEnergy';
-    function isUserDisabled: ObjCBOOL; message 'isUserDisabled';
+    function isUserDisabled: objcbool; message 'isUserDisabled';
     function grouping: NSString; message 'grouping';
     function locationType: ITLibMediaItemLocationType; message 'locationType';
   end;

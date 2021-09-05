@@ -22,7 +22,7 @@ type
     transmitSize: mach_vm_size_t;
     transmitWriteHead: cuint32;
     notification: io_object_t;
-    shouldRemove: ObjCBOOL;
+    shouldRemove: objcbool;
     {$ifndef _LP64}
     interfaceName: NSString;
     interfacePrivate: AVBInterface;

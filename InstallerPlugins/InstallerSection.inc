@@ -23,13 +23,13 @@ type
     function bundle: NSBundle; message 'bundle';
     function title: NSString; message 'title';
     function firstPane_: InstallerPane; message 'firstPane';
-    function shouldLoad: ObjCBOOL; message 'shouldLoad';
+    function shouldLoad: objcbool; message 'shouldLoad';
     procedure willLoadMainNib; message 'willLoadMainNib';
     procedure didLoadMainNib; message 'didLoadMainNib';
     function sharedDictionary: NSMutableDictionary; message 'sharedDictionary';
     function installerState: InstallerState; message 'installerState';
     function activePane: InstallerPane; message 'activePane';
-    function gotoPane (pane: InstallerPane): ObjCBOOL; message 'gotoPane:';
+    function gotoPane (pane: InstallerPane): objcbool; message 'gotoPane:';
   end;
 {$endif}
 

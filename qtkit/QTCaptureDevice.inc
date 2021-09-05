@@ -57,16 +57,16 @@ type
     function modelUniqueID: NSString; message 'modelUniqueID';
     function localizedDisplayName: NSString; message 'localizedDisplayName';
     function formatDescriptions: NSArray; message 'formatDescriptions';
-    function hasMediaType (mediaType: NSString): ObjCBOOL; message 'hasMediaType:';
+    function hasMediaType (mediaType: NSString): objcbool; message 'hasMediaType:';
     function deviceAttributes: NSDictionary; message 'deviceAttributes';
     procedure setDeviceAttributes (deviceAttributes: NSDictionary); message 'setDeviceAttributes:';
-    function attributeIsReadOnly (attributeKey: NSString): ObjCBOOL; message 'attributeIsReadOnly:';
+    function attributeIsReadOnly (attributeKey: NSString): objcbool; message 'attributeIsReadOnly:';
     function attributeForKey (attributeKey: NSString): id; message 'attributeForKey:';
     procedure setAttribute_forKey (attribute: id; attributeKey: NSString); message 'setAttribute:forKey:';
-    function isConnected: ObjCBOOL; message 'isConnected';
-    function isInUseByAnotherApplication: ObjCBOOL; message 'isInUseByAnotherApplication';
-    function isOpen: ObjCBOOL; message 'isOpen';
-    function open (errorPtr: NSErrorPtr): ObjCBOOL; message 'open:';
+    function isConnected: objcbool; message 'isConnected';
+    function isInUseByAnotherApplication: objcbool; message 'isInUseByAnotherApplication';
+    function isOpen: objcbool; message 'isOpen';
+    function open (errorPtr: NSErrorPtr): objcbool; message 'open:';
     procedure close; message 'close';
 
     { Adopted protocols }

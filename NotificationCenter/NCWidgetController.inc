@@ -13,7 +13,7 @@ type
   public
     class function widgetController: instancetype; message 'widgetController';
     class function defaultWidgetController: NCWidgetController; message 'defaultWidgetController'; deprecated 'in "Use widgetController instead."';
-    procedure setHasContent_forWidgetWithBundleIdentifier (flag: ObjCBOOL; bundleID: NSString); message 'setHasContent:forWidgetWithBundleIdentifier:';
+    procedure setHasContent_forWidgetWithBundleIdentifier (flag: objcbool; bundleID: NSString); message 'setHasContent:forWidgetWithBundleIdentifier:';
   end;
 {$endif}
 

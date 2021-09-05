@@ -31,7 +31,7 @@ type
     _authorization: SFAuthorization;
     _delegate: id;
     _currentState: SFAuthorizationViewState;
-    _authorized: ObjCBOOL;
+    _authorized: objcbool;
     _timeInterval: NSTimeInterval;
     _flags: AuthorizationFlags;
     _privateData: id;
@@ -41,17 +41,17 @@ type
     procedure setAuthorizationRights (authorizationRights: AuthorizationRightsPtr); message 'setAuthorizationRights:';
     function authorizationRights: AuthorizationRightsPtr; message 'authorizationRights';
     function authorization: SFAuthorization; message 'authorization';
-    function updateStatus (inSender: id): ObjCBOOL; message 'updateStatus:';
-    procedure setAutoupdate (autoupdate: ObjCBOOL); message 'setAutoupdate:';
-    procedure setAutoupdate_interval (autoupdate: ObjCBOOL; interval: NSTimeInterval); message 'setAutoupdate:interval:';
+    function updateStatus (inSender: id): objcbool; message 'updateStatus:';
+    procedure setAutoupdate (autoupdate: objcbool); message 'setAutoupdate:';
+    procedure setAutoupdate_interval (autoupdate: objcbool; interval: NSTimeInterval); message 'setAutoupdate:interval:';
     function authorizationState: SFAuthorizationViewState; message 'authorizationState';
-    procedure setEnabled (enabled: ObjCBOOL); message 'setEnabled:';
-    function isEnabled: ObjCBOOL; message 'isEnabled';
+    procedure setEnabled (enabled: objcbool); message 'setEnabled:';
+    function isEnabled: objcbool; message 'isEnabled';
     procedure setFlags (flags: AuthorizationFlags); message 'setFlags:';
     procedure setDelegate (delegate: id); message 'setDelegate:';
     function delegate: id; message 'delegate';
-    function authorize (inSender: id): ObjCBOOL; message 'authorize:';
-    function deauthorize (inSender: id): ObjCBOOL; message 'deauthorize:';
+    function authorize (inSender: id): objcbool; message 'authorize:';
+    function deauthorize (inSender: id): objcbool; message 'deauthorize:';
   end;
 
 
@@ -59,7 +59,7 @@ type
   NSObject_SFAuthorizationViewDelegate = objccategory external name 'SFAuthorizationViewDelegate' (NSObject)
     procedure authorizationViewDidAuthorize (view: SFAuthorizationView); message 'authorizationViewDidAuthorize:';
     procedure authorizationViewDidDeauthorize (view: SFAuthorizationView); message 'authorizationViewDidDeauthorize:';
-    function authorizationViewShouldDeauthorize (view: SFAuthorizationView): ObjCBOOL; message 'authorizationViewShouldDeauthorize:';
+    function authorizationViewShouldDeauthorize (view: SFAuthorizationView): objcbool; message 'authorizationViewShouldDeauthorize:';
     procedure authorizationViewCreatedAuthorization (view: SFAuthorizationView); message 'authorizationViewCreatedAuthorization:';
     procedure authorizationViewReleasedAuthorization (view: SFAuthorizationView); message 'authorizationViewReleasedAuthorization:';
     procedure authorizationViewDidHide (view: SFAuthorizationView); message 'authorizationViewDidHide:';

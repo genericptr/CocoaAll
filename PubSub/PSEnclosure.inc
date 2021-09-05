@@ -37,7 +37,7 @@ type
     function downloadProgress: double; message 'downloadProgress';
     function downloadError: NSError; message 'downloadError';
     function downloadedPath: NSString; message 'downloadedPath';
-    function download (error: NSErrorPtr): ObjCBOOL; message 'download:';
+    function download (error: NSErrorPtr): objcbool; message 'download:';
     procedure cancelDownload; message 'cancelDownload';
     procedure deleteDownload; message 'deleteDownload';
   end;

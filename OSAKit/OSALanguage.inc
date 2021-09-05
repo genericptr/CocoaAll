@@ -44,7 +44,7 @@ type
     function subType: OSType; message 'subType';
     function manufacturer: OSType; message 'manufacturer';
     function features: OSALanguageFeatures; message 'features';
-    function isThreadSafe: ObjCBOOL; message 'isThreadSafe';
+    function isThreadSafe: objcbool; message 'isThreadSafe';
   end;
 {$endif}
 

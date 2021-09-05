@@ -23,7 +23,7 @@ type
     procedure startControllerMatching; message 'startControllerMatching';
     procedure didAddInterface (interface_: AVBInterface); message 'didAddInterface:';
     procedure didRemoveInterface (interface_: AVBInterface); message 'didRemoveInterface:';
-    function streamingEnabledInterfacesOnly: ObjCBOOL; message 'streamingEnabledInterfacesOnly';
+    function streamingEnabledInterfacesOnly: objcbool; message 'streamingEnabledInterfacesOnly';
     class function nextAvailableDynamicEntityID: cuint64; message 'nextAvailableDynamicEntityID';
     class procedure releaseDynamicEntityID (entityID: cuint64); message 'releaseDynamicEntityID:';
     class function nextAvailableDynamicEntityModelID: cuint64; message 'nextAvailableDynamicEntityModelID';

@@ -15,8 +15,8 @@ type
     _registeredDefaults: NSMutableDictionary;
     _userName: NSString;
     _domainName: NSString;
-    _dirty: ObjCBOOL;
-    _screenLockPrefChanged: ObjCBOOL;
+    _dirty: objcbool;
+    _screenLockPrefChanged: objcbool;
   public
     class function defaultsForModuleWithName (inModuleName: NSString): id; message 'defaultsForModuleWithName:';
   end;

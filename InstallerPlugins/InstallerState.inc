@@ -26,14 +26,14 @@ type
   private
     _private: InstallerState_PrivatePtr;
   public
-    function licenseAgreed: ObjCBOOL; message 'licenseAgreed';
+    function licenseAgreed: objcbool; message 'licenseAgreed';
     function licenseAgreedLanguage: NSString; message 'licenseAgreedLanguage';
     function targetVolumePath: NSString; message 'targetVolumePath';
     function targetPath: NSString; message 'targetPath';
     function choiceDictionaries: NSArray; message 'choiceDictionaries';
     function choiceDictionaryForIdentifier (choiceIdentifier: NSString): NSDictionary; message 'choiceDictionaryForIdentifier:';
-    function installStarted: ObjCBOOL; message 'installStarted';
-    function installSucceeded: ObjCBOOL; message 'installSucceeded';
+    function installStarted: objcbool; message 'installStarted';
+    function installSucceeded: objcbool; message 'installSucceeded';
   end;
 {$endif}
 

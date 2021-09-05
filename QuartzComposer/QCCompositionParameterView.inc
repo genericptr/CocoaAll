@@ -16,11 +16,11 @@ type
   public
     procedure setCompositionRenderer (renderer: QCCompositionRendererProtocol); message 'setCompositionRenderer:';
     function compositionRenderer: QCCompositionRendererProtocol; message 'compositionRenderer';
-    function hasParameters: ObjCBOOL; message 'hasParameters';
+    function hasParameters: objcbool; message 'hasParameters';
     procedure setBackgroundColor (color: NSColor); message 'setBackgroundColor:';
     function backgroundColor: NSColor; message 'backgroundColor';
-    procedure setDrawsBackground (flag: ObjCBOOL); message 'setDrawsBackground:';
-    function drawsBackground: ObjCBOOL; message 'drawsBackground';
+    procedure setDrawsBackground (flag: objcbool); message 'setDrawsBackground:';
+    function drawsBackground: objcbool; message 'drawsBackground';
     procedure setDelegate (delegate: id); message 'setDelegate:';
     function delegate: id; message 'delegate';
   end;
@@ -28,7 +28,7 @@ type
 
 type
   QCCompositionParameterViewDelegate = objccategory external (NSObject)
-    function compositionParameterView_shouldDisplayParameterWithKey_attributes (parameterView: QCCompositionParameterView; portKey: NSString; portAttributes: NSDictionary): ObjCBOOL; message 'compositionParameterView:shouldDisplayParameterWithKey:attributes:';
+    function compositionParameterView_shouldDisplayParameterWithKey_attributes (parameterView: QCCompositionParameterView; portKey: NSString; portAttributes: NSDictionary): objcbool; message 'compositionParameterView:shouldDisplayParameterWithKey:attributes:';
     procedure compositionParameterView_didChangeParameterWithKey (parameterView: QCCompositionParameterView; portKey: NSString); message 'compositionParameterView:didChangeParameterWithKey:';
   end;
 {$endif}

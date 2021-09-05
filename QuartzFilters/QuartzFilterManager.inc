@@ -31,7 +31,7 @@ type
     function filterPanel: NSPanel; message 'filterPanel';
     function filterView: QuartzFilterView; message 'filterView';
     function selectedFilter: QuartzFilter; message 'selectedFilter';
-    function selectFilter (filter: QuartzFilter): ObjCBOOL; message 'selectFilter:';
+    function selectFilter (filter: QuartzFilter): objcbool; message 'selectFilter:';
     procedure setDelegate (aDelegate: id); message 'setDelegate:';
     function delegate: id; message 'delegate';
     function importFilter (filterProperties: NSDictionary): QuartzFilter; message 'importFilter:';

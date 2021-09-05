@@ -26,7 +26,7 @@ type
     function outputKeys: NSArray; message 'outputKeys';
     function propertyListFromInputValues: id; message 'propertyListFromInputValues';
     procedure setInputValuesWithPropertyList (plist: id); message 'setInputValuesWithPropertyList:';
-    function setValue_forInputKey (value: id; key: NSString): ObjCBOOL; message 'setValue:forInputKey:';
+    function setValue_forInputKey (value: id; key: NSString): objcbool; message 'setValue:forInputKey:';
     function userInfo: NSMutableDictionary; message 'userInfo';
     function valueForInputKey (key: NSString): id; message 'valueForInputKey:';
     function valueForOutputKey (key: NSString): id; message 'valueForOutputKey:';

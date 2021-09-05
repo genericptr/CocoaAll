@@ -20,7 +20,7 @@ type
     function properties: NSDictionary; message 'properties';
     function url: NSURL; message 'url';
     function localizedName: NSString; message 'localizedName';
-    function applyToContext (aContext: CGContextRef): ObjCBOOL; message 'applyToContext:';
+    function applyToContext (aContext: CGContextRef): objcbool; message 'applyToContext:';
     procedure removeFromContext (aContext: CGContextRef); message 'removeFromContext:';
   end;
 {$endif}

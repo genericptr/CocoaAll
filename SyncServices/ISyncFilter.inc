@@ -11,9 +11,9 @@ type
 
 type
   ISyncFilteringProtocol = objcprotocol external name 'ISyncFiltering' (NSCodingProtocol)
-    function isEqual (anotherFilter: id): ObjCBOOL; message 'isEqual:'; deprecated 'in 10_4, 10_7';
+    function isEqual (anotherFilter: id): objcbool; message 'isEqual:'; deprecated 'in 10_4, 10_7';
     function supportedEntityNames: NSArray; message 'supportedEntityNames'; deprecated 'in 10_4, 10_7';
-    function shouldApplyRecord_withRecordIdentifier (record_: NSDictionary; recordId: NSString): ObjCBOOL; message 'shouldApplyRecord:withRecordIdentifier:'; deprecated 'in 10_4, 10_7';
+    function shouldApplyRecord_withRecordIdentifier (record_: NSDictionary; recordId: NSString): objcbool; message 'shouldApplyRecord:withRecordIdentifier:'; deprecated 'in 10_4, 10_7';
   end;
 {$endif}
 

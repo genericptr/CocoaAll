@@ -49,8 +49,8 @@ type
     procedure setLogin(newValue: NSString); message 'setLogin:';
     function login: NSString; message 'login';
     function feedFormat: cint; message 'feedFormat';
-    function isRefreshing: ObjCBOOL; message 'isRefreshing';
-    function refresh (error: NSErrorPtr): ObjCBOOL; message 'refresh:';
+    function isRefreshing: objcbool; message 'isRefreshing';
+    function refresh (error: NSErrorPtr): objcbool; message 'refresh:';
     function lastError: NSError; message 'lastError';
     procedure setSettings(newValue: PSFeedSettings); message 'setSettings:';
     function settings: PSFeedSettings; message 'settings';
@@ -60,7 +60,7 @@ type
     function unreadCount: cint; message 'unreadCount';
     function entries: NSArray; message 'entries';
     function XMLRepresentation: NSXMLElement; message 'XMLRepresentation';
-    function XMLRepresentationWithEntries (withEntries: ObjCBOOL): NSXMLElement; message 'XMLRepresentationWithEntries:';
+    function XMLRepresentationWithEntries (withEntries: objcbool): NSXMLElement; message 'XMLRepresentationWithEntries:';
     function extensionXMLElementsUsingNamespace (nameSpace: NSString): NSArray; message 'extensionXMLElementsUsingNamespace:';
   end;
 {$endif}

@@ -19,8 +19,8 @@ type
     function dataRepresentation: NSData; message 'dataRepresentation';
     procedure setStringRepresentation(newValue: NSString); message 'setStringRepresentation:';
     function stringRepresentation: NSString; message 'stringRepresentation';
-    procedure setMulticast(newValue: ObjCBOOL); message 'setMulticast:';
-    function isMulticast: ObjCBOOL; message 'isMulticast';
+    procedure setMulticast(newValue: objcbool); message 'setMulticast:';
+    function isMulticast: objcbool; message 'isMulticast';
 
     { Adopted protocols }
     function copyWithZone (zone: NSZonePtr): id; message 'copyWithZone:';

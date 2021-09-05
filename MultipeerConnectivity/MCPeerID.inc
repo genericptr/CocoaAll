@@ -18,7 +18,7 @@ type
     function copyWithZone (zone: NSZonePtr): id; message 'copyWithZone:';
     procedure encodeWithCoder (aCoder: NSCoder); message 'encodeWithCoder:';
     function initWithCoder (aDecoder: NSCoder): id; message 'initWithCoder:';
-    class function supportsSecureCoding: ObjCBOOL; message 'supportsSecureCoding';
+    class function supportsSecureCoding: objcbool; message 'supportsSecureCoding';
   end;
 {$endif}
 

@@ -18,13 +18,13 @@ type
     function contents: NSArray; message 'contents';
     procedure setMinimumVisibleRowCount(newValue: NSUInteger); message 'setMinimumVisibleRowCount:';
     function minimumVisibleRowCount: NSUInteger; message 'minimumVisibleRowCount';
-    procedure setHasDividerLines(newValue: ObjCBOOL); message 'setHasDividerLines:';
-    function hasDividerLines: ObjCBOOL; message 'hasDividerLines';
-    procedure setEditing(newValue: ObjCBOOL); message 'setEditing:';
-    function editing: ObjCBOOL; message 'editing';
-    procedure setShowsAddButtonWhenEditing(newValue: ObjCBOOL); message 'setShowsAddButtonWhenEditing:';
-    function showsAddButtonWhenEditing: ObjCBOOL; message 'showsAddButtonWhenEditing';
-    function viewControllerAtRow_makeIfNecessary (row: NSUInteger; makeIfNecesary: ObjCBOOL): NSViewController; message 'viewControllerAtRow:makeIfNecessary:';
+    procedure setHasDividerLines(newValue: objcbool); message 'setHasDividerLines:';
+    function hasDividerLines: objcbool; message 'hasDividerLines';
+    procedure setEditing(newValue: objcbool); message 'setEditing:';
+    function editing: objcbool; message 'editing';
+    procedure setShowsAddButtonWhenEditing(newValue: objcbool); message 'setShowsAddButtonWhenEditing:';
+    function showsAddButtonWhenEditing: objcbool; message 'showsAddButtonWhenEditing';
+    function viewControllerAtRow_makeIfNecessary (row: NSUInteger; makeIfNecesary: objcbool): NSViewController; message 'viewControllerAtRow:makeIfNecessary:';
     function rowForViewController (viewController: NSViewController): NSUInteger; message 'rowForViewController:';
   end;
 {$endif}
@@ -36,9 +36,9 @@ type
     function widgetList_viewControllerForRow (list: NCWidgetListViewController; row: NSUInteger): NSViewController; message 'widgetList:viewControllerForRow:';
   optional
     procedure widgetListPerformAddAction (list: NCWidgetListViewController); message 'widgetListPerformAddAction:';
-    function widgetList_shouldReorderRow (list: NCWidgetListViewController; row: NSUInteger): ObjCBOOL; message 'widgetList:shouldReorderRow:';
+    function widgetList_shouldReorderRow (list: NCWidgetListViewController; row: NSUInteger): objcbool; message 'widgetList:shouldReorderRow:';
     procedure widgetList_didReorderRow_toRow (list: NCWidgetListViewController; row: NSUInteger; newIndex: NSUInteger); message 'widgetList:didReorderRow:toRow:';
-    function widgetList_shouldRemoveRow (list: NCWidgetListViewController; row: NSUInteger): ObjCBOOL; message 'widgetList:shouldRemoveRow:';
+    function widgetList_shouldRemoveRow (list: NCWidgetListViewController; row: NSUInteger): objcbool; message 'widgetList:shouldRemoveRow:';
     procedure widgetList_didRemoveRow (list: NCWidgetListViewController; row: NSUInteger); message 'widgetList:didRemoveRow:';
   end;
 {$endif}

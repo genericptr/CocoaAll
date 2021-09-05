@@ -35,7 +35,7 @@ type
     procedure setLanguage(newValue: OSALanguage); message 'setLanguage:';
     function language: OSALanguage; message 'language';
     function scriptState: OSAScriptState; message 'scriptState';
-    function isCompiling: ObjCBOOL; message 'isCompiling';
+    function isCompiling: objcbool; message 'isCompiling';
     procedure compileScript (sender: id); message 'compileScript:';
     procedure recordScript (sender: id); message 'recordScript:';
     procedure runScript (sender: id); message 'runScript:';

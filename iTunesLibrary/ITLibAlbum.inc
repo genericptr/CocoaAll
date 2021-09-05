@@ -14,25 +14,25 @@ type
   private
     _title: NSString;
     _sortTitle: NSString;
-    _compilation: ObjCBOOL;
+    _compilation: objcbool;
     _discCount: NSUInteger;
     _discNumber: NSUInteger;
     _rating: NSInteger;
-    _ratingComputed: ObjCBOOL;
-    _gapless: ObjCBOOL;
+    _ratingComputed: objcbool;
+    _gapless: objcbool;
     _trackCount: NSUInteger;
     _albumArtist: NSString;
     _sortAlbumArtist: NSString;
   public
     function title: NSString; message 'title';
     function sortTitle: NSString; message 'sortTitle';
-    function isCompilation: ObjCBOOL; message 'isCompilation';
+    function isCompilation: objcbool; message 'isCompilation';
     function artist: ITLibArtist; message 'artist';
     function discCount: NSUInteger; message 'discCount';
     function discNumber: NSUInteger; message 'discNumber';
     function rating: NSInteger; message 'rating';
-    function isRatingComputed: ObjCBOOL; message 'isRatingComputed';
-    function isGapless: ObjCBOOL; message 'isGapless';
+    function isRatingComputed: objcbool; message 'isRatingComputed';
+    function isGapless: objcbool; message 'isGapless';
     function trackCount: NSUInteger; message 'trackCount';
     function albumArtist: NSString; message 'albumArtist';
     function sortAlbumArtist: NSString; message 'sortAlbumArtist';

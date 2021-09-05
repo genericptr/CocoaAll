@@ -55,7 +55,7 @@ type
     procedure setPanelType (panelType_: IMKCandidatePanelType); message 'setPanelType:';
     procedure show (locationHint: IMKCandidatesLocationHint); message 'show:';
     procedure hide; message 'hide';
-    function isVisible: ObjCBOOL; message 'isVisible';
+    function isVisible: objcbool; message 'isVisible';
     procedure updateCandidates; message 'updateCandidates';
     procedure showAnnotation (annotationString: NSAttributedString); message 'showAnnotation:';
     procedure showSublist_subListDelegate (candidates: NSArray; delegate: id); message 'showSublist:subListDelegate:';
@@ -68,8 +68,8 @@ type
     function selectionKeysKeylayout: TISInputSourceRef; message 'selectionKeysKeylayout';
     procedure setAttributes (attributes: NSDictionary); message 'setAttributes:';
     function attributes: NSDictionary; message 'attributes';
-    procedure setDismissesAutomatically (flag: ObjCBOOL); message 'setDismissesAutomatically:';
-    function dismissesAutomatically: ObjCBOOL; message 'dismissesAutomatically';
+    procedure setDismissesAutomatically (flag: objcbool); message 'setDismissesAutomatically:';
+    function dismissesAutomatically: objcbool; message 'dismissesAutomatically';
     function selectedCandidateString_: NSAttributedString; message 'selectedCandidateString';
     function selectedCandidate: NSInteger; message 'selectedCandidate';
     procedure setCandidateFrameTopLeft_ (point: NSPoint); message 'setCandidateFrameTopLeft:';
@@ -78,7 +78,7 @@ type
     procedure attachChild_toCandidate_type (child: IMKCandidates; candidateIdentifier: NSInteger; theType: IMKStyleType); message 'attachChild:toCandidate:type:';
     procedure detachChild (candidateIdentifier: NSInteger); message 'detachChild:';
     procedure setCandidateData (candidatesArray: NSArray); message 'setCandidateData:';
-    function selectCandidateWithIdentifier (candidateIdentifier: NSInteger): ObjCBOOL; message 'selectCandidateWithIdentifier:';
+    function selectCandidateWithIdentifier (candidateIdentifier: NSInteger): objcbool; message 'selectCandidateWithIdentifier:';
     procedure selectCandidate (candidateIdentifier: NSInteger); message 'selectCandidate:';
     procedure showCandidates; message 'showCandidates';
     function candidateStringIdentifier (candidateString: id): NSInteger; message 'candidateStringIdentifier:';

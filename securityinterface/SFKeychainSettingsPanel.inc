@@ -31,7 +31,7 @@ type
     _clientContextInfo: pointer;
     _lockIntervalVal: cuint32;
     _keychainRef: SecKeychainRef;
-    _lockOnSleepVal: ObjCBOOL;
+    _lockOnSleepVal: objcbool;
     _settings: SecKeychainSettings;
     _reserved_SFKeychainSettingsPanel_: id;
     {$endif}

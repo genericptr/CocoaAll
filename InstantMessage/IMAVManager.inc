@@ -70,9 +70,9 @@ type
 type
   IMVideoDataSource = objccategory external (NSObject)
     procedure getPixelBufferPixelFormat (pixelFormatOut: OSTypePtr); message 'getPixelBufferPixelFormat:'; deprecated 'in 10_5, 10_9';
-    function renderIntoPixelBuffer_forTime (buffer: CVPixelBufferRef; timeStamp: CVTimeStampPtr): ObjCBOOL; message 'renderIntoPixelBuffer:forTime:'; deprecated 'in 10_5, 10_9';
+    function renderIntoPixelBuffer_forTime (buffer: CVPixelBufferRef; timeStamp: CVTimeStampPtr): objcbool; message 'renderIntoPixelBuffer:forTime:'; deprecated 'in 10_5, 10_9';
     procedure getOpenGLBufferContext_pixelFormat (contextOut: CGLContextObjPtr; pixelFormatOut: CGLPixelFormatObjPtr); message 'getOpenGLBufferContext:pixelFormat:'; deprecated 'in 10_5, 10_9';
-    function renderIntoOpenGLBuffer_onScreen_forTime (buffer: CVOpenGLBufferRef; screenInOut: pcint; timeStamp: CVTimeStampPtr): ObjCBOOL; message 'renderIntoOpenGLBuffer:onScreen:forTime:'; deprecated 'in 10_5, 10_9';
+    function renderIntoOpenGLBuffer_onScreen_forTime (buffer: CVOpenGLBufferRef; screenInOut: pcint; timeStamp: CVTimeStampPtr): objcbool; message 'renderIntoOpenGLBuffer:onScreen:forTime:'; deprecated 'in 10_5, 10_9';
   end;
 {$endif}
 

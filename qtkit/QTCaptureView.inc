@@ -24,8 +24,8 @@ type
     procedure setVideoPreviewConnection (videoPreviewConnection: QTCaptureConnection); message 'setVideoPreviewConnection:';
     function fillColor: NSColor; message 'fillColor';
     procedure setFillColor (fillColor: NSColor); message 'setFillColor:';
-    function preservesAspectRatio: ObjCBOOL; message 'preservesAspectRatio';
-    procedure setPreservesAspectRatio (preservesAspectRatio: ObjCBOOL); message 'setPreservesAspectRatio:';
+    function preservesAspectRatio: objcbool; message 'preservesAspectRatio';
+    procedure setPreservesAspectRatio (preservesAspectRatio: objcbool); message 'setPreservesAspectRatio:';
     function previewBounds: NSRect; message 'previewBounds';
     function delegate: id; message 'delegate';
     procedure setDelegate (delegate: id); message 'setDelegate:';

@@ -33,14 +33,14 @@ type
   private
     _QCViewPrivate: pointer;
   public
-    function loadCompositionFromFile (path: NSString): ObjCBOOL; message 'loadCompositionFromFile:';
+    function loadCompositionFromFile (path: NSString): objcbool; message 'loadCompositionFromFile:';
     {$if (defined(MAC_OS_X_VERSION_10_5)) and ((MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5))}
-    function loadComposition (composition: QCComposition): ObjCBOOL; message 'loadComposition:';
+    function loadComposition (composition: QCComposition): objcbool; message 'loadComposition:';
     function loadedComposition: QCComposition; message 'loadedComposition';
     procedure unloadComposition; message 'unloadComposition';
     {$endif}
-    procedure setAutostartsRendering (flag: ObjCBOOL); message 'setAutostartsRendering:';
-    function autostartsRendering: ObjCBOOL; message 'autostartsRendering';
+    procedure setAutostartsRendering (flag: objcbool); message 'setAutostartsRendering:';
+    function autostartsRendering: objcbool; message 'autostartsRendering';
     procedure setEraseColor (color: NSColor); message 'setEraseColor:';
     function eraseColor: NSColor; message 'eraseColor';
     procedure setEventForwardingMask (mask: NSUInteger); message 'setEventForwardingMask:';
@@ -48,15 +48,15 @@ type
     procedure setMaxRenderingFrameRate (maxFPS: single); message 'setMaxRenderingFrameRate:';
     function maxRenderingFrameRate: single; message 'maxRenderingFrameRate';
     procedure erase; message 'erase';
-    function startRendering: ObjCBOOL; message 'startRendering';
+    function startRendering: objcbool; message 'startRendering';
     {$if (defined(MAC_OS_X_VERSION_10_5)) and ((MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5))}
-    function renderAtTime_arguments (time: NSTimeInterval; arguments: NSDictionary): ObjCBOOL; message 'renderAtTime:arguments:';
+    function renderAtTime_arguments (time: NSTimeInterval; arguments: NSDictionary): objcbool; message 'renderAtTime:arguments:';
     procedure pauseRendering; message 'pauseRendering';
-    function isPausedRendering: ObjCBOOL; message 'isPausedRendering';
+    function isPausedRendering: objcbool; message 'isPausedRendering';
     procedure resumeRendering; message 'resumeRendering';
     {$endif}
     procedure stopRendering; message 'stopRendering';
-    function isRendering: ObjCBOOL; message 'isRendering';
+    function isRendering: objcbool; message 'isRendering';
     {$if (defined(MAC_OS_X_VERSION_10_5)) and ((MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5))}
     function snapshotImage: NSImage; message 'snapshotImage';
     function createSnapshotImageOfType (type_: NSString): id; message 'createSnapshotImageOfType:';
@@ -70,7 +70,7 @@ type
     function outputKeys: NSArray; message 'outputKeys';
     function propertyListFromInputValues: id; message 'propertyListFromInputValues';
     procedure setInputValuesWithPropertyList (plist: id); message 'setInputValuesWithPropertyList:';
-    function setValue_forInputKey (value: id; key: NSString): ObjCBOOL; message 'setValue:forInputKey:';
+    function setValue_forInputKey (value: id; key: NSString): objcbool; message 'setValue:forInputKey:';
     function userInfo: NSMutableDictionary; message 'userInfo';
     function valueForInputKey (key: NSString): id; message 'valueForInputKey:';
     function valueForOutputKey (key: NSString): id; message 'valueForOutputKey:';

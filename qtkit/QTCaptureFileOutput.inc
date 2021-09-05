@@ -38,7 +38,7 @@ type
     procedure recordToOutputFileURL (url: NSURL); message 'recordToOutputFileURL:';
     procedure recordToOutputFileURL_bufferDestination (url: NSURL; bufferDestination: QTCaptureFileOutputBufferDestination); message 'recordToOutputFileURL:bufferDestination:';
     {$if (QTKIT_VERSION_MAX_ALLOWED >= QTKIT_VERSION_7_6_3)}
-    function isRecordingPaused: ObjCBOOL; message 'isRecordingPaused';
+    function isRecordingPaused: objcbool; message 'isRecordingPaused';
     procedure pauseRecording; message 'pauseRecording';
     procedure resumeRecording; message 'resumeRecording';
     {$endif}
@@ -64,7 +64,7 @@ type
     procedure captureOutput_didOutputSampleBuffer_fromConnection (captureOutput: QTCaptureFileOutput; sampleBuffer: QTSampleBuffer; connection: QTCaptureConnection); message 'captureOutput:didOutputSampleBuffer:fromConnection:';
     procedure captureOutput_willStartRecordingToOutputFileAtURL_forConnections (captureOutput: QTCaptureFileOutput; fileURL: NSURL; connections: NSArray); message 'captureOutput:willStartRecordingToOutputFileAtURL:forConnections:';
     procedure captureOutput_didStartRecordingToOutputFileAtURL_forConnections (captureOutput: QTCaptureFileOutput; fileURL: NSURL; connections: NSArray); message 'captureOutput:didStartRecordingToOutputFileAtURL:forConnections:';
-    function captureOutput_shouldChangeOutputFileAtURL_forConnections_dueToError (captureOutput: QTCaptureFileOutput; outputFileURL: NSURL; connections: NSArray; error: NSError): ObjCBOOL; message 'captureOutput:shouldChangeOutputFileAtURL:forConnections:dueToError:';
+    function captureOutput_shouldChangeOutputFileAtURL_forConnections_dueToError (captureOutput: QTCaptureFileOutput; outputFileURL: NSURL; connections: NSArray; error: NSError): objcbool; message 'captureOutput:shouldChangeOutputFileAtURL:forConnections:dueToError:';
     procedure captureOutput_mustChangeOutputFileAtURL_forConnections_dueToError (captureOutput: QTCaptureFileOutput; outputFileURL: NSURL; connections: NSArray; error: NSError); message 'captureOutput:mustChangeOutputFileAtURL:forConnections:dueToError:';
     procedure captureOutput_willFinishRecordingToOutputFileAtURL_forConnections_dueToError (captureOutput: QTCaptureFileOutput; outputFileURL: NSURL; connections: NSArray; error: NSError); message 'captureOutput:willFinishRecordingToOutputFileAtURL:forConnections:dueToError:';
     procedure captureOutput_didFinishRecordingToOutputFileAtURL_forConnections_dueToError (captureOutput: QTCaptureFileOutput; outputFileURL: NSURL; connections: NSArray; error: NSError); message 'captureOutput:didFinishRecordingToOutputFileAtURL:forConnections:dueToError:';

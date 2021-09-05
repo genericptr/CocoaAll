@@ -54,10 +54,10 @@ type
     _items: NSMutableArray;
   public
     function name: NSString; message 'name';
-    function isMaster: ObjCBOOL; message 'isMaster';
+    function isMaster: objcbool; message 'isMaster';
     function parentID: NSNumber; message 'parentID';
-    function isVisible: ObjCBOOL; message 'isVisible';
-    function isAllItemsPlaylist: ObjCBOOL; message 'isAllItemsPlaylist';
+    function isVisible: objcbool; message 'isVisible';
+    function isAllItemsPlaylist: objcbool; message 'isAllItemsPlaylist';
     function items: NSArray; message 'items';
     function distinguishedKind: ITLibDistinguishedPlaylistKind; message 'distinguishedKind';
     function kind: ITLibPlaylistKind; message 'kind';

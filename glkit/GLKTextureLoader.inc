@@ -97,7 +97,7 @@ type
     height: GLuint;
     alphaState: GLKTextureInfoAlphaState;
     textureOrigin: GLKTextureInfoOrigin;
-    containsMipmaps: ObjCBOOL;
+    containsMipmaps: objcbool;
   public
     function name_: GLuint; message 'name';
     function target_: GLenum; message 'target';
@@ -105,7 +105,7 @@ type
     function height_: GLuint; message 'height';
     function alphaState_: GLKTextureInfoAlphaState; message 'alphaState';
     function textureOrigin_: GLKTextureInfoOrigin; message 'textureOrigin';
-    function containsMipmaps_: ObjCBOOL; message 'containsMipmaps';
+    function containsMipmaps_: objcbool; message 'containsMipmaps';
 
     { Adopted protocols }
     function copyWithZone (zone: NSZonePtr): id; message 'copyWithZone:';

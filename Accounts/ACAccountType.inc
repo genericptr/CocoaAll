@@ -31,7 +31,7 @@ type
   public
     function accountTypeDescription: NSString; message 'accountTypeDescription';
     function identifier: NSString; message 'identifier';
-    function accessGranted: ObjCBOOL; message 'accessGranted';
+    function accessGranted: objcbool; message 'accessGranted';
   end;
 {$endif}
 

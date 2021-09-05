@@ -48,7 +48,7 @@ type
     function controlsStyle: AVPlayerViewControlsStyle; message 'controlsStyle';
     procedure setVideoGravity(newValue: NSString); message 'setVideoGravity:';
     function videoGravity: NSString; message 'videoGravity';
-    function isReadyForDisplay: ObjCBOOL; message 'isReadyForDisplay';
+    function isReadyForDisplay: objcbool; message 'isReadyForDisplay';
     function videoBounds: NSRect; message 'videoBounds';
     function contentOverlayView: NSView; message 'contentOverlayView';
   end;
@@ -56,19 +56,19 @@ type
 
 type
   AVPlayerViewCustomization = objccategory external (AVPlayerView)
-    procedure setShowsFrameSteppingButtons(newValue: ObjCBOOL); message 'setShowsFrameSteppingButtons:';
-    function showsFrameSteppingButtons: ObjCBOOL; message 'showsFrameSteppingButtons';
-    procedure setShowsSharingServiceButton(newValue: ObjCBOOL); message 'setShowsSharingServiceButton:';
-    function showsSharingServiceButton: ObjCBOOL; message 'showsSharingServiceButton';
+    procedure setShowsFrameSteppingButtons(newValue: objcbool); message 'setShowsFrameSteppingButtons:';
+    function showsFrameSteppingButtons: objcbool; message 'showsFrameSteppingButtons';
+    procedure setShowsSharingServiceButton(newValue: objcbool); message 'setShowsSharingServiceButton:';
+    function showsSharingServiceButton: objcbool; message 'showsSharingServiceButton';
     procedure setActionPopUpButtonMenu(newValue: NSMenu); message 'setActionPopUpButtonMenu:';
     function actionPopUpButtonMenu: NSMenu; message 'actionPopUpButtonMenu';
-    procedure setShowsFullScreenToggleButton(newValue: ObjCBOOL); message 'setShowsFullScreenToggleButton:';
-    function showsFullScreenToggleButton: ObjCBOOL; message 'showsFullScreenToggleButton';
+    procedure setShowsFullScreenToggleButton(newValue: objcbool); message 'setShowsFullScreenToggleButton:';
+    function showsFullScreenToggleButton: objcbool; message 'showsFullScreenToggleButton';
   end;
 
 type
   AVPlayerViewTrimming = objccategory external (AVPlayerView)
-    function canBeginTrimming: ObjCBOOL; message 'canBeginTrimming';
+    function canBeginTrimming: objcbool; message 'canBeginTrimming';
     procedure beginTrimmingWithCompletionHandler (handler: OpaqueCBlock); message 'beginTrimmingWithCompletionHandler:';
   end;
 

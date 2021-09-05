@@ -43,7 +43,7 @@ type
 {$endif}
 
 {$ifdef FUNCTIONS}
-function GCExtendedGamepadSnapShotDataV100FromNSData(snapshotData: GCExtendedGamepadSnapShotDataV100Ptr; data: NSData): ObjCBOOL; cdecl; external;
+function GCExtendedGamepadSnapShotDataV100FromNSData(snapshotData: GCExtendedGamepadSnapShotDataV100Ptr; data: NSData): objcbool; cdecl; external;
 function NSDataFromGCExtendedGamepadSnapShotDataV100(snapshotData: GCExtendedGamepadSnapShotDataV100Ptr): NSData; cdecl; external;
 {$endif}
 

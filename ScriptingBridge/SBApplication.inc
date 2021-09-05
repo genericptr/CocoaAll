@@ -19,7 +19,7 @@ type
     class function applicationWithURL (url: NSURL): id; message 'applicationWithURL:';
     class function applicationWithProcessIdentifier (pid: pid_t): id; message 'applicationWithProcessIdentifier:';
     function classForScriptingClass (className: NSString): pobjc_class; message 'classForScriptingClass:';
-    function isRunning: ObjCBOOL; message 'isRunning';
+    function isRunning: objcbool; message 'isRunning';
     procedure activate; message 'activate';
     procedure setDelegate(newValue: SBApplicationDelegateProtocol); message 'setDelegate:';
     function delegate: SBApplicationDelegateProtocol; message 'delegate';

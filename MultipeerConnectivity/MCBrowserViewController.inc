@@ -37,7 +37,7 @@ type
     procedure browserViewControllerDidFinish (browserViewController: MCBrowserViewController); message 'browserViewControllerDidFinish:';
     procedure browserViewControllerWasCancelled (browserViewController: MCBrowserViewController); message 'browserViewControllerWasCancelled:';
   optional
-    function browserViewController_shouldPresentNearbyPeer_withDiscoveryInfo (browserViewController: MCBrowserViewController; peerID: MCPeerID; info: NSDictionary): ObjCBOOL; message 'browserViewController:shouldPresentNearbyPeer:withDiscoveryInfo:';
+    function browserViewController_shouldPresentNearbyPeer_withDiscoveryInfo (browserViewController: MCBrowserViewController; peerID: MCPeerID; info: NSDictionary): objcbool; message 'browserViewController:shouldPresentNearbyPeer:withDiscoveryInfo:';
   end;
 {$endif}
 

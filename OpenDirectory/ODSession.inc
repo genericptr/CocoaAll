@@ -19,11 +19,11 @@ type
     function nodeNamesAndReturnError (outError: NSErrorPtr): NSArray; message 'nodeNamesAndReturnError:'; { available in 10_6, NA }
     function configurationTemplateNames: NSArray; message 'configurationTemplateNames';
     function mappingTemplateNames: NSArray; message 'mappingTemplateNames';
-    function configurationAuthorizationAllowingUserInteraction_error (allowInteraction: ObjCBOOL; error: NSErrorPtr): SFAuthorization; message 'configurationAuthorizationAllowingUserInteraction:error:'; { available in 10_9 }
+    function configurationAuthorizationAllowingUserInteraction_error (allowInteraction: objcbool; error: NSErrorPtr): SFAuthorization; message 'configurationAuthorizationAllowingUserInteraction:error:'; { available in 10_9 }
     function configurationForNodename (nodename: NSString): ODConfiguration; message 'configurationForNodename:'; { available in 10_9 }
-    function addConfiguration_authorization_error (configuration: ODConfiguration; authorization: SFAuthorization; error: NSErrorPtr): ObjCBOOL; message 'addConfiguration:authorization:error:'; { available in 10_9 }
-    function deleteConfiguration_authorization_error (configuration: ODConfiguration; authorization: SFAuthorization; error: NSErrorPtr): ObjCBOOL; message 'deleteConfiguration:authorization:error:'; { available in 10_9 }
-    function deleteConfigurationWithNodename_authorization_error (nodename: NSString; authorization: SFAuthorization; error: NSErrorPtr): ObjCBOOL; message 'deleteConfigurationWithNodename:authorization:error:'; { available in 10_9 }
+    function addConfiguration_authorization_error (configuration: ODConfiguration; authorization: SFAuthorization; error: NSErrorPtr): objcbool; message 'addConfiguration:authorization:error:'; { available in 10_9 }
+    function deleteConfiguration_authorization_error (configuration: ODConfiguration; authorization: SFAuthorization; error: NSErrorPtr): objcbool; message 'deleteConfiguration:authorization:error:'; { available in 10_9 }
+    function deleteConfigurationWithNodename_authorization_error (nodename: NSString; authorization: SFAuthorization; error: NSErrorPtr): objcbool; message 'deleteConfigurationWithNodename:authorization:error:'; { available in 10_9 }
   end;
 {$endif}
 

@@ -24,7 +24,7 @@ type
     procedure setPressedChangedHandler(newValue: GCControllerButtonValueChangedHandler); message 'setPressedChangedHandler:';
     function pressedChangedHandler: GCControllerButtonValueChangedHandler; message 'pressedChangedHandler';
     function value: single; message 'value';
-    function isPressed: ObjCBOOL; message 'isPressed';
+    function isPressed: objcbool; message 'isPressed';
   end;
 {$endif}
 

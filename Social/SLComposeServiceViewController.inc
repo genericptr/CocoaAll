@@ -26,7 +26,7 @@ type
     procedure didSelectPost; message 'didSelectPost';
     procedure didSelectCancel; message 'didSelectCancel';
     procedure cancel; message 'cancel';
-    function isContentValid: ObjCBOOL; message 'isContentValid';
+    function isContentValid: objcbool; message 'isContentValid';
     procedure validateContent; message 'validateContent';
     procedure setCharactersRemaining(newValue: NSNumber); message 'setCharactersRemaining:';
     function charactersRemaining: NSNumber; message 'charactersRemaining';

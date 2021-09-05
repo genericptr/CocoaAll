@@ -48,7 +48,7 @@ type
   public
     function initWithPeer (myPeerID: MCPeerID): instancetype; message 'initWithPeer:';
     function initWithPeer_securityIdentity_encryptionPreference (myPeerID: MCPeerID; identity: NSArray; encryptionPreference: MCEncryptionPreference): instancetype; message 'initWithPeer:securityIdentity:encryptionPreference:'; { NS_DESIGNATED_INITIALIZER }
-    function sendData_toPeers_withMode_error (data: NSData; peerIDs: NSArray; mode: MCSessionSendDataMode; error: NSErrorPtr): ObjCBOOL; message 'sendData:toPeers:withMode:error:';
+    function sendData_toPeers_withMode_error (data: NSData; peerIDs: NSArray; mode: MCSessionSendDataMode; error: NSErrorPtr): objcbool; message 'sendData:toPeers:withMode:error:';
     procedure disconnect; message 'disconnect';
     function sendResourceAtURL_withName_toPeer_withCompletionHandler (resourceURL: NSURL; resourceName: NSString; peerID: MCPeerID; completionHandler: OpaqueCBlock): NSProgress; message 'sendResourceAtURL:withName:toPeer:withCompletionHandler:';
     function startStreamWithName_toPeer_error (streamName: NSString; peerID: MCPeerID; error: NSErrorPtr): NSOutputStream; message 'startStreamWithName:toPeer:error:';

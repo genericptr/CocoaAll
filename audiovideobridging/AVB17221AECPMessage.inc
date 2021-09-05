@@ -54,10 +54,10 @@ type
   public
     procedure setCommandType(newValue: AVB17221AEMCommandType); message 'setCommandType:';
     function commandType: AVB17221AEMCommandType; message 'commandType';
-    procedure setUnsolicited(newValue: ObjCBOOL); message 'setUnsolicited:';
-    function isUnsolicited: ObjCBOOL; message 'isUnsolicited';
-    procedure setControllerRequest(newValue: ObjCBOOL); message 'setControllerRequest:';
-    function isControllerRequest: ObjCBOOL; message 'isControllerRequest';
+    procedure setUnsolicited(newValue: objcbool); message 'setUnsolicited:';
+    function isUnsolicited: objcbool; message 'isUnsolicited';
+    procedure setControllerRequest(newValue: objcbool); message 'setControllerRequest:';
+    function isControllerRequest: objcbool; message 'isControllerRequest';
     procedure setCommandSpecificData(newValue: NSData); message 'setCommandSpecificData:';
     function commandSpecificData_: NSData; message 'commandSpecificData';
     class function commandMessage: AVB17221AECPAEMMessage; message 'commandMessage';
